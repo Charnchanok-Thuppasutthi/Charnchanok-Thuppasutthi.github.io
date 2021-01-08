@@ -39,10 +39,10 @@
 <h3>พิมพ์ใหญ่ กับ พิมพ์เล็ก จะไม่ใช่คำสั่งเดียวกันใน HTML</h3> 
 <p>เช่น <br>&lt;P&gt; ไม่ได้มีการทำงานเหมือนกับ &lt;p&gt;
 <br>
-<!-- ------------------------------------------------------------ -->
+<hr>    
 <h2>ในหัวข้อ &lt; HTML Heading &gt; </h2>
-<p>Heading หมานถึวหัวข้อ ข้อความการประกาศ Heading นี้จะใข้ Tag &lt;h1&gt;, &lt;h2&gt; ,&lt;h3&gt; ไปจนถึง 6</p>
-<p>เช่นตัวอย่างนี้</p>
+<p>Heading หมานถึวหัวข้อ ข้อความการประกาศ Heading นี้จะใข้ Tag &lt;h1&gt;, &lt;h2&gt; ,&lt;h3&gt; ไปจนถึง 6
+เช่นตัวอย่างนี้</p>
 <h1>Heading 1</h1>
 <h2>Heading 2</h2>
 <h3>Heading 3</h3>
@@ -53,12 +53,71 @@
 <p>โดยเรียงลำดับความสำคัญ จากเลขจ้อยไปมาก</p>
 <p>โดยปกติมักจะใช้  &lt;h1&gt; เป็นหัวข้อหลัก &lt;h2&gt; หัวข้อรองลงมา &lt;h3&gt;ก็รองลงมา เรื่อยๆอีก </p>
 <h2>หากต้องการเพิ่มขนาดของ Heading เราจะใช้ attribute ของ option style ที่ชื่อว่า font-size </h2>
-<p> &lt;h1&gt; style="font-size:60px;">Heading 1 &lt;/h1&gt; </p>
-<p>ผลลัพธ์ที่ได้จะเป็นดังข้างล่าง </p>
+<p> &lt;h1&gt; style="font-size:60px;">Heading 1 &lt;/h1&gt; <br>
+ผลลัพธ์ที่ได้จะเป็นดังข้างล่าง </p>
 <h1 style="font-size:60px;">Heading 1</h1>
 
+<hr>
 
 <h2>ในหัวข้อ &lt; HTML Paragraphs &gt; </h2>
+<p>ใน HTML เราใช้คำ Tag  &lt;p&gt; เพื่อทำการกำหนดว่า นี่คือประโยค โดยทุกครั้งที่ใช้งาน Tag จะทำการขึ้นบรรทัดใหม่
+เช่น <br>    </p>
+&lt;p&gt; This is a paragraph. &lt;/p&gt;<br>
+&lt;p&gt; This is another paragraph. &lt;/p&gt; <br>
+<p>เมื่อเปิดผ่าน Browser จะได้ผลลัพธ์ได้ดังนี้</p>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<h2> เราไม่สามารถทราบได้ถึงขนาดของหน้าจอ(Display)ของผู้เข้าดูได้แต่ HTML นั้นจะทำการจัดการพื้นที่ของข้อความให้อัตโนมัติ  </h2>
+เช่น
+&lt;p&gt;
+    This paragraph<br>
+    contains a lot of lines<br>
+    in the source code,<br>
+    but the browser<br>
+    ignores it.<br>
+    &lt;/p&gt;
+<p>การแสดงผลลัพธ์จะเห็นดังข้างล่าง</p>
+<p>
+    This paragraph
+    contains a lot of lines
+    in the source code,
+    but the browser
+    ignores it.
+    </p>
+<h2>Tag &lt;hr&gt;ไว้สำหรับขีดเส้นใต้หน้าใน HTML </h2>
+<p>เช่นเส้นใต้นี้ </p>
+<hr>
+<p>เป็นต้น</p>
+
+<h2>Tag &lt;br&gt; (Line Break) ไว้สำหรับขึ้นบรรทัดใหม่ </h2>
+<p>เช่น <br> 
+    &lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt; </p>
+<p>ผลลัพธ์ที่ได้คือ</p>
+<p>This is<br>a paragraph<br>with line breaks.</p>
+<h2> Tag &lt;pre&gt; ใช้สำหรับการแสดงข้อความที่จะออกมาเป็นเหมือนที่เราพิมพ์ใน HTML</h2> 
+<p>ถ้าเราทำการพิมพ์</p>
+&lt;pre&gt;
+    My Bonnie lies over the ocean.<br>
+  <br>
+    My Bonnie lies over the sea.<br>
+  <br>
+    My Bonnie lies over the ocean.<br>
+  <br>
+    Oh, bring back my Bonnie to me.<br>
+    &lt;/pre&gt;
+<p>ผลลัพธ์ที่ได้จะเป็นเหมือนที่พิมพ์ไป</p>
+<pre>
+    My Bonnie lies over the ocean.
+  
+    My Bonnie lies over the sea.
+  
+    My Bonnie lies over the ocean.
+  
+    Oh, bring back my Bonnie to me.
+  </pre>
+  <hr>
+  <h2>ในหัวข้อ &lt; HTML Style &gt; </h2>
 
 
 
