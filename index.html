@@ -7,7 +7,7 @@
 <body>
 <h2>ในหัวข้อ &lt; HTML Elements &gt; </h2>
 <p> คำว่า Elements จะนิยามถึงทุกอย่างที่เริ่มจาก tag เปิดจนถึงปิด โดย มี tag <br>
-<h2> Elements สามารถติดกันได้ คือสามารถเรียกใช้หลายๆ tag พร้อมกันได้  </h2>
+<h3> Elements สามารถติดกันได้ คือสามารถเรียกใช้หลายๆ tag พร้อมกันได้  </h3>
 <p>ยกตัวอย่างCode</p>
 <p> &lt;!DOCTYPE html&gt; <br>
     &lt;html&gt; <br>
@@ -52,7 +52,7 @@
 
 <p>โดยเรียงลำดับความสำคัญ จากเลขจ้อยไปมาก</p>
 <p>โดยปกติมักจะใช้  &lt;h1&gt; เป็นหัวข้อหลัก &lt;h2&gt; หัวข้อรองลงมา &lt;h3&gt;ก็รองลงมา เรื่อยๆอีก </p>
-<h2>หากต้องการเพิ่มขนาดของ Heading เราจะใช้ attribute ของ option style ที่ชื่อว่า font-size </h2>
+<h3>หากต้องการเพิ่มขนาดของ Heading เราจะใช้ attribute ของ option style ที่ชื่อว่า font-size </h3>
 <p> &lt;h1&gt; style="font-size:60px;">Heading 1 &lt;/h1&gt; <br>
 ผลลัพธ์ที่ได้จะเป็นดังข้างล่าง </p>
 <h1 style="font-size:60px;">Heading 1</h1>
@@ -68,7 +68,7 @@
 <p>This is a paragraph.</p>
 <p>This is another paragraph.</p>
 
-<h2> เราไม่สามารถทราบได้ถึงขนาดของหน้าจอ(Display)ของผู้เข้าดูได้แต่ HTML นั้นจะทำการจัดการพื้นที่ของข้อความให้อัตโนมัติ  </h2>
+<h3> เราไม่สามารถทราบได้ถึงขนาดของหน้าจอ(Display)ของผู้เข้าดูได้แต่ HTML นั้นจะทำการจัดการพื้นที่ของข้อความให้อัตโนมัติ  </h3>
 เช่น
 &lt;p&gt;
     This paragraph<br>
@@ -85,17 +85,17 @@
     but the browser
     ignores it.
     </p>
-<h2>Tag &lt;hr&gt;ไว้สำหรับขีดเส้นใต้หน้าใน HTML </h2>
+<h3>Tag &lt;hr&gt;ไว้สำหรับขีดเส้นใต้หน้าใน HTML </h3>
 <p>เช่นเส้นใต้นี้ </p>
 <hr>
 <p>เป็นต้น</p>
 
-<h2>Tag &lt;br&gt; (Line Break) ไว้สำหรับขึ้นบรรทัดใหม่ </h2>
+<h3>Tag &lt;br&gt; (Line Break) ไว้สำหรับขึ้นบรรทัดใหม่ </h3>
 <p>เช่น <br> 
     &lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt; </p>
 <p>ผลลัพธ์ที่ได้คือ</p>
 <p>This is<br>a paragraph<br>with line breaks.</p>
-<h2> Tag &lt;pre&gt; ใช้สำหรับการแสดงข้อความที่จะออกมาเป็นเหมือนที่เราพิมพ์ใน HTML</h2> 
+<h3> Tag &lt;pre&gt; ใช้สำหรับการแสดงข้อความที่จะออกมาเป็นเหมือนที่เราพิมพ์ใน HTML</h3> 
 <p>ถ้าเราทำการพิมพ์</p>
 &lt;pre&gt;
     My Bonnie lies over the ocean.<br>
@@ -118,6 +118,58 @@
   </pre>
   <hr>
   <h2>ในหัวข้อ &lt; HTML Style &gt; </h2>
+<p>style เป็น attribute ที่ใช้สำหรับเพิ่มelement(สี,ฟ้อนต์,ขนาดและอื่นๆ)</p>
+<p>เช่น</p>
+<p>I am normal</p>
+<p style="color:red;">I am red</p>
+<p style="color:blue;">I am blue</p>
+<p style="font-size:50px;">I am big</p>
+<p>จากโค้ด
+<p>I am normal<br>
+  &lt;p style="color:red;"&gt;I am red &lt/p&gt; <br>
+  &lt;p style="color:blue;"&gt;I am blue &lt/p&gt;<br>
+  &lt;p style="font-size:50px;"&gt;I am big &lt/p&gt;</p>
+
+<h3>syntax หรือ ไวยากรณ์ของ style จะเป็นดังโครงสร้างนี้</h3>
+<p> &lt; tagname &gt; style="property:value;" &lt;/tagname&gt;</p>
+
+<h3>การใส่สีพื้นหลังทั้งหน้า Page</h3>
+  <p> &lt;body&gt; style="background-color:powderblue;"&gt; <br>
+  &lt;h1&gt;This is a heading &lt; /h1 &gt; <br>
+  &lt;p&gt;This is a paragraph. &lt; /p &gt; <br>
+  &lt;/body&gt; </p>
+<h3>การใส่สีพื้นหลังเฉพาะบรรทัด</h3>
+  <h1 style="background-color:powderblue;">This is a heading</h1>
+  <p style="background-color:tomato;">This is a paragraph.</p>
+  <p>จากโค้ด<br>
+    &lt;h1 style="background-color:powderblue;"&gt;This is a heading&lt;/h1&gt;<br>
+    &lt;p style="background-color:tomato;"&gt;This is a paragraph.&lt;/p&gt;
+  </p>
+<h3>การใส่สีตัวอักษร</h3>
+  <h1 style="color:blue;">This is a heading</h1>
+  <p style="color:red;">This is a paragraph.</p>
+  <p>จากโค้ด<br>
+    &lt;h1 style="color:blue;"&gt;This is a heading&lt;/h1&gt;<br>
+    &lt;p style="color:red;"&gt;This is a paragraph.&lt;/p&gt;</p>
+<h3>รูปแบบฟ้อนต์</h3>
+  <h1 style="font-family:verdana;">This is a heading</h1>
+  <p style="font-family:courier;">This is a paragraph.</p>
+  <p>จากโค้ด<br>
+    &lt; style="font-family:verdana;"&gt;This is a heading&lt;/h1&gt;<br>
+    &lt;p style="font-family:courier;"&gt;This is a paragraph.&lt;/p&gt;</p>
+<h3>ขนาดตัวอักษร</h3>
+  <h1 style="font-size:300%;">This is a heading</h1>
+  <p style="font-size:160%;">This is a paragraph.</p>
+  <p>จากโค้ด<br>
+  &lt;h1 style="font-size:300%;"&gt;This is a heading&lt;/h1&gt;<br>
+  &lt;p style="font-size:160%;"&gt;This is a paragraph.&lt;/p&gt;
+<h3>ตำแหน่งตัวอักษร</h3>
+  <h1 style="text-align:center;">Centered Heading</h1>
+  <p style="text-align:center;">Centered paragraph.</p>
+  <p>จากโค้ด<br>
+    &lt;h1 style="text-align:center;"&gt;Centered Heading&lt;/h1&gt; <br>
+    &lt;p style="text-align:center;"&gt;Centered paragraph.&lt;/p&gt;
+<hr>
 
 
 
