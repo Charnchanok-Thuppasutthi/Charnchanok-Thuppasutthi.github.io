@@ -1,309 +1,415 @@
 <html>    
   <head>
-    <h1> &lt;First Page HTML&gt; </h1>
-      <p>ทำการอธิบายที่ได้ศึกษา HTML </p>
+    <hr>
+    <link rel="stylesheet" href="styles.css">
+    <!--Heading-->
+    <div class="heading">
+    <h1 style="text-align:center;"> HTML </h1>
+      <p>ตัวผู้เขียนทำการอธิบายที่ได้ศึกษา HTML โดยใช้เว็บอ้างอิงคือ <a href="https://www.w3schools.com/html/default.asp" target="_blank" ><b>w3schools</b></a></p>
+    </div>
   </head>
   <body>
-    <h2>ในหัวข้อ &lt; HTML Elements &gt; </h2>
-      <p> คำว่า Elements จะนิยามถึงทุกอย่างที่เริ่มจาก tag เปิดจนถึงปิด โดย มี tag <br>
-      <h3> Elements สามารถติดกันได้ คือสามารถเรียกใช้หลายๆ tag พร้อมกันได้  </h3>
-        <p>ยกตัวอย่างCode</p>
-        <p> &lt;!DOCTYPE html&gt; <br>
-          &lt;html&gt; <br>
-            &lt;body&gt; <br><br>
-            &lt;h1&gt; My First Heading&lt;/h1&gt; <br>
-            &lt;p&gt; My first paragraph.&lt;/p&gt; <br><br>
-            &lt;/body&gt; <br>
-            &lt;/html&gt;  <br> 
-        <p>จะเห็นได้ว่า &lt;html&gt;&lt;body&gt;&lt;h1&gt; สามารถติดกันได้<br>
-          ส่วน code ที่อยู่ใน &lt;html&gt จนถึงฝั่งปิด(&lt;/html&gt) จะเป็นส่วนทั้งหมดของ file HTML นั้นๆ 
-          หรือก็คือส่วน <br><br>
-            &lt;body&gt; <br>
+    <div class="list_container">
+      <p class="contents_title">เนื้อหา</p>
+      <div class="list">
+          <a href="#html_element">หัวข้อ HTML Elements</a><br>
+          <a href="#html_attribute">หัวข้อ HTML Attribute</a><br>
+          <a href="#html_heading">หัวข้อ HTML Heading</a><br>
+          <a href="#html_paragraphs">หัวข้อ HTML Paragraphs</a><br>
+          <a href="#html_style">หัวข้อ HTML Styles</a><br>
+          <a href="#html_formatting">หัวข้อ HTML Text Formatting</a><br>
+          <a href="#html_quotation">หัวข้อ HTML Quotation and Citation Elements</a><br>
+          <a href="#html_comment">หัวข้อ HTML Comments</a><br>
+          <a href="#html_color">หัวข้อ HTML Colors</a><br>
+          <a href="#html_css">หัวข้อ HTML CSS</a><br>
+          <a href="#html_link">หัวข้อ HTML Link</a><br>
+      </div>
+    </div>
+
+      <!--Section1-->
+    <div class ="content">
+      <div class = "page">
+        <h2 id=html_element>ในหัวข้อ &lt; HTML Elements &gt; </h2>
+          <p> คำว่า Elements จะนิยามถึงทุกอย่างที่เริ่มจาก tag เปิดจนถึงปิด โดย มี tag <br>
+          <h3> Elements สามารถติดกันได้ คือสามารถเรียกใช้หลายๆ tag พร้อมกันได้  </h3>
+            <p>ยกตัวอย่างCode</p>
+              <p> &lt;!DOCTYPE html&gt; <br>
+              &lt;html&gt; <br>
+              &lt;body&gt; <br><br>
+              &lt;h1&gt; My First Heading&lt;/h1&gt; <br>
+              &lt;p&gt; My first paragraph.&lt;/p&gt; <br><br>
+              &lt;/body&gt; <br>
+              &lt;/html&gt;  <br> 
+            <p>จะเห็นได้ว่า &lt;html&gt;&lt;body&gt;&lt;h1&gt; สามารถติดกันได้<br>
+               ส่วน code ที่อยู่ใน &lt;html&gt จนถึงฝั่งปิด(&lt;/html&gt) จะเป็นส่วนทั้งหมดของ file HTML นั้นๆ 
+               หรือก็คือส่วน <br><br>
+                &lt;body&gt; <br>
+                &lt;h1&gt; My First Heading&lt;/h1&gt; <br>
+                &lt;p&gt; My first paragraph.&lt;/p&gt; <br>
+                &lt;/body&gt; <br></p>
+            <p>ส่วนข้างในของตัว &lt;body&gt; นี้คือ code ที่อยู่ใน body <br><br>
+              &lt;h1&gt; My First Heading&lt;/h1&gt; <br>
+              &lt;p&gt; My first paragraph.&lt;/p&gt; <br>
+            </p>
+           <p> ซึ่ง &lt;h1&gt;....&lt;/h1&gt; ไว้สำหรับเขียน heading1 (หัวข้อที่1) <br>
+              การที่มี &lt;h1&gt;....&lt;/h1&gt; การมีเลข 1 เท่ากับว่าสามารถมี &lt;h2&gt;&lt;/h2&gt; , &lt;h3&gt;&lt;/h3&gt;...ถึง &lt;h6&gt;&lt;/h6&gt; <br>
+              ซึ่ง  &lt;p&gt;....&lt;p&gt; ไว้สำหรับเขียน paragraph <br>
+              &lt;br&gt; ไว้สำหรับเริ่มไปบรรทัดใหม่
+
+          <h3>พิมพ์ใหญ่ กับ พิมพ์เล็ก จะไม่ใช่คำสั่งเดียวกันใน HTML</h3> 
+            <p>เช่น <br>&lt;P&gt; ไม่ได้มีการทำงานเหมือนกับ &lt;p&gt;
+            <br>
+          <hr>    
+      </div>
+
+      <!--Section2-->
+      <div class="page">
+        <h2 id=html_attribute>&lt;HTML Attribute&gt;</h2>
+          <h3>&lt;a&gt; เป็น tag ที่ใช้สำหรับกำหนด hyperlink href=..... ใส่เป็น URL</h3>
+            &lt;a href="https://www.w3schools.com">Visit W3Schools&lt;/a&gt;<br>
+            <a href="https://www.w3schools.com">Visit W3Schools</a>
+          <h3>src Attribute เราใช้ tag นี้ไว้ฝังภาพลงไปบนเว็บไซต์ เช่น</h3>
+            &lt;img src="img_girl.jpg"&gt;
+            <img src="img_girl.jpg">
+          <h3>width และ height Attribute ไว้สำหรับ</h3>
+            &lt;img src="img_girl."jpg width="500" height="600"&gt;
+          <h3>alt Attribute เป็น attribute สำหรับ tag &lt;img&gt; ใช้เพื่อแสดงประโยคเพื่อบ่งบอกว่าภาพนี้เป็นภาพอะไรในกรณีที่ ไม่สามารถแสดงภาพได้จากสาเหตุด้าน internet</h3>
+            &lt;img src="img_typo.jpg" alt="Girl with a jacket"&gt; <br>
+            <img src="img_typo.jpg" alt="Girl with a jacket">
+          <h3>style Attribute ใช้สำหรับเพิ่ม color font size และอื่นๆให้กับประโยค</h3>
+            &lt;p style="color:red;"&gt;This is a red paragraph.&lt;/p&gt;
+            <p style="color:red;">This is a red paragraph.</p>
+          <hr>
+      </div>
+
+      <!--Section3-->
+      <div class="page">
+        <h2 id=html_heading>ในหัวข้อ &lt; HTML Heading &gt; </h2>
+            <p>Heading หมานถึวหัวข้อ ข้อความการประกาศ Heading นี้จะใข้ Tag &lt;h1&gt;, &lt;h2&gt; ,&lt;h3&gt; ไปจนถึง 6
+              เช่นตัวอย่างนี้</p>
+              <h1>Heading 1</h1>
+              <h2>Heading 2</h2>
+              <h3>Heading 3</h3>
+              <h4>Heading 4</h4>
+              <h5>Heading 5</h5>
+              <h6>Heading 6</h6>
+      
+            <p>โดยเรียงลำดับความสำคัญ จากเลขจ้อยไปมาก</p>
+            <p>โดยปกติมักจะใช้  &lt;h1&gt; เป็นหัวข้อหลัก &lt;h2&gt; หัวข้อรองลงมา &lt;h3&gt;ก็รองลงมา เรื่อยๆอีก </p>
+          <h3>หากต้องการเพิ่มขนาดของ Heading เราจะใช้ attribute ของ option style ที่ชื่อว่า font-size </h3>
+            <p> &lt;h1&gt; style="font-size:60px;">Heading 1 &lt;/h1&gt; <br>
+              ผลลัพธ์ที่ได้จะเป็นดังข้างล่าง </p>
+            <h1 style="font-size:60px;">Heading 1</h1> 
+        <hr>
+      </div>
+
+    <!--section4-->
+      <div class="page">
+        <h2 id=html_paragraphs>ในหัวข้อ &lt; HTML Paragraphs &gt; </h2>
+          <p>ใน HTML เราใช้คำ Tag  &lt;p&gt; เพื่อทำการกำหนดว่า นี่คือประโยค โดยทุกครั้งที่ใช้งาน Tag จะทำการขึ้นบรรทัดใหม่
+          เช่น <br>    </p>
+          &lt;p&gt; This is a paragraph. &lt;/p&gt;<br>
+          &lt;p&gt; This is another paragraph. &lt;/p&gt; <br>
+          <p>เมื่อเปิดผ่าน Browser จะได้ผลลัพธ์ได้ดังนี้</p>
+          <p>This is a paragraph.</p>
+          <p>This is another paragraph.</p>
+  
+          <h3> เราไม่สามารถทราบได้ถึงขนาดของหน้าจอ(Display)ของผู้เข้าดูได้แต่ HTML นั้นจะทำการจัดการพื้นที่ของข้อความให้อัตโนมัติ  </h3>
+          เช่น
+            &lt;p&gt;
+            This paragraph<br>
+            contains a lot of lines<br>
+            in the source code,<br>
+            but the browser<br>
+            ignores it.<br>
+            &lt;/p&gt;
+          <p>การแสดงผลลัพธ์จะเห็นดังข้างล่าง</p>
+          <p>
+            This paragraph
+            contains a lot of lines
+            in the source code,
+            but the browser
+            ignores it.
+          </p>
+          <h3>Tag &lt;hr&gt;ไว้สำหรับขีดเส้นใต้หน้าใน HTML </h3>
+            <p>เช่นเส้นใต้นี้ </p>
+        <hr>
+        <p>เป็นต้น</p>
+  
+          <h3>Tag &lt;br&gt; (Line Break) ไว้สำหรับขึ้นบรรทัดใหม่ </h3>
+          <p>เช่น <br> 
+            &lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt; </p>
+            <p>ผลลัพธ์ที่ได้คือ</p>
+            <p>This is<br>a paragraph<br>with line breaks.</p>
+          <h3> Tag &lt;pre&gt; ใช้สำหรับการแสดงข้อความที่จะออกมาเป็นเหมือนที่เราพิมพ์ใน HTML</h3> 
+            <p>ถ้าเราทำการพิมพ์</p>
+            &lt;pre&gt;
+                My Bonnie lies over the ocean.<br>
+              <br>
+                My Bonnie lies over the sea.<br>
+              <br>
+                My Bonnie lies over the ocean.<br>
+              <br>
+                Oh, bring back my Bonnie to me.<br>
+                &lt;/pre&gt;
+              <p>ผลลัพธ์ที่ได้จะเป็นเหมือนที่พิมพ์ไป</p>
+              <pre>
+                  My Bonnie lies over the ocean.
+                
+                  My Bonnie lies over the sea.
+                
+                  My Bonnie lies over the ocean.
+                
+                  Oh, bring back my Bonnie to me.
+                </pre>
+        <hr>
+      </div>
+
+    <!--section5-->
+    <div class="page">
+      <h2 id=html_style>ในหัวข้อ &lt; HTML Style &gt; </h2>
+          <p>style เป็น attribute ที่ใช้สำหรับเพิ่มelement(สี,ฟ้อนต์,ขนาดและอื่นๆ)</p>
+          <p>เช่น</p>
+            <p>I am normal</p>
+            <p style="color:red;">I am red</p>
+            <p style="color:blue;">I am blue</p>
+            <p style="font-size:50px;">I am big</p>
+            <p>จากโค้ด
+            <p>I am normal<br>
+            &lt;p style="color:red;"&gt;I am red &lt/p&gt; <br>
+            &lt;p style="color:blue;"&gt;I am blue &lt/p&gt;<br>
+            &lt;p style="font-size:50px;"&gt;I am big &lt/p&gt;</p>
+
+        <h3>syntax หรือ ไวยากรณ์ของ style จะเป็นดังโครงสร้างนี้</h3>
+          <p> &lt; tagname &gt; style="property:value;" &lt;/tagname&gt;</p>
+
+        <h3>การใส่สีพื้นหลังทั้งหน้า Page</h3>
+          <p> &lt;body&gt; style="background-color:powderblue;"&gt; <br>
+            &lt;h1&gt;This is a heading &lt; /h1 &gt; <br>
+            &lt;p&gt;This is a paragraph. &lt; /p &gt; <br>
+            &lt;/body&gt; </p>
+        <h3>การใส่สีพื้นหลังเฉพาะบรรทัด</h3>
+          <h1 style="background-color:powderblue;">This is a heading</h1>
+            <p style="background-color:tomato;">This is a paragraph.</p>
+            <p>จากโค้ด<br>
+            &lt;h1 style="background-color:powderblue;"&gt;This is a heading&lt;/h1&gt;<br>
+            &lt;p style="background-color:tomato;"&gt;This is a paragraph.&lt;/p&gt;
+          </p>
+        <h3>การใส่สีตัวอักษร</h3>
+          <h1 style="color:blue;">This is a heading</h1>
+          <p style="color:red;">This is a paragraph.</p>
+          <p>จากโค้ด<br>
+            &lt;h1 style="color:blue;"&gt;This is a heading&lt;/h1&gt;<br>
+            &lt;p style="color:red;"&gt;This is a paragraph.&lt;/p&gt;</p>
+        <h3>รูปแบบฟ้อนต์</h3>
+          <h1 style="font-family:verdana;">This is a heading</h1>
+          <p style="font-family:courier;">This is a paragraph.</p>
+          <p>จากโค้ด<br>
+            &lt; style="font-family:verdana;"&gt;This is a heading&lt;/h1&gt;<br>
+            &lt;p style="font-family:courier;"&gt;This is a paragraph.&lt;/p&gt;</p>
+        <h3>ขนาดตัวอักษร</h3>
+          <h1 style="font-size:300%;">This is a heading</h1>
+            <p style="font-size:160%;">This is a paragraph.</p>
+            <p>จากโค้ด<br>
+            &lt;h1 style="font-size:300%;"&gt;This is a heading&lt;/h1&gt;<br>
+            &lt;p style="font-size:160%;"&gt;This is a paragraph.&lt;/p&gt;
+        <h3>ตำแหน่งตัวอักษร</h3>
+          <h1 style="text-align:center;">Centered Heading</h1>
+            <p style="text-align:center;">Centered paragraph.</p>
+            <p>จากโค้ด<br>
+            &lt;h1 style="text-align:center;"&gt;Centered Heading&lt;/h1&gt; <br>
+            &lt;p style="text-align:center;"&gt;Centered paragraph.&lt;/p&gt;
+      <hr>
+    </div>
+    <div class="page"><h2 id=html_formatting>ในหัวข้อ &lt; HTML Formatting &gt; </h2>
+      <p>ลักษณะพิเศษที่สามารถใช้งานกับ ตัวอักษร มีดังนี้</p>
+        &lt;b&gt; - Bold text <br>
+        &lt;strong&gt; - Important text <br>
+        &lt;i&gt; - Italic text <br>
+        &lt;em&gt; - Emphasized text <br>
+        &lt;mark&gt; - Marked text <br>
+        &lt;small&gt; - Smaller text <br>
+        &lt;del&gt; - Deleted text <br>
+        &lt;ins&gt; - Inserted text <br>
+        &lt;sub&gt; - Subscript text <br>
+        &lt;sup&gt; - Superscript text <br>
+      <h3>&lt;b&gt;และ&lt;strong&gt; ทำให้ตัวอักษรหน้าเหมือนกัน อย่างตัวอย่างข้างล่าง</h3>
+        <b>This text is bold</b>
+      <h3>&lt;i&gt;และ&lt;em&gt; ทำให้ตัวอักษรเอียง อย่างตัวอย่างข้างล่าง</h3>
+        <i>This text is italic</i>
+      <h3> &lt;small&gt; ทำให้ตัวอักษรเล็กกว่าปกติ</h3>
+        <small>This is some smaller text.</small>
+      <h3>&lt;mark&gt;ทำการ Highlight ตัวอักษรนั้น</h3>
+        <p>Do not forget to buy <mark>milk</mark> today.</p>
+      <h3>&lt;del&gt;ทำการขีดค่าตัวอักษรนั้น</h3>
+        <p>My favorite color is <del>blue</del> red.</p>
+      <h3>&lt;ins&gt;ทำการขีดเส้นใต้ตัวอักษรนั้น</h3>
+        <p>My favorite color is blue <ins>red</ins>.</p>
+      <h3>&lt;sub&gt;ทำให้ตัวอักษรเป็นตัวไขว้ใต้ตัวปกติ</h3>
+        <p>This is <sub>subscripted</sub> text.</p>
+      <h3>&lt;sub&gt;ทำให้ตัวอักษรเป็นตัวไขว้ใต้ตัวปกติ</h3>
+        <p>This is <sup>superscripted</sup> text.</p>
+<hr>
+</div>
+<div class="page"><h2 id=html_quotation>ในหัวข้อ HMTL Quotation and Citation Elements</h2>
+  <h3>&lt; blockquote&gt; ใช้สำหรับตประโยคที่นำมาจากแหล่งอื่น ตัวประโยคจะถูกย้อหน้า เช่นตัวอย่าง</h3>
+    &lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt; <br>
+      For 50 years, WWF has been protecting the future of nature.The world's leading conservation <br>
+      organization,WWF works in 100 countries and is supported by1.2 million members in the <br>
+      United States andclose to 5 million globally. <br>
+    &lt;/blockquote&gt;
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+      For nearly 60 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by more than one million members in the United States and close to five million globally.
+    </blockquote>
+  <h3>&lt;q&gt;ใช้สำหรับเครื่องหมายคำพูดในประโยค</h3>
+    &lt;p&gt;WWF's goal is to: &lt;q&gt;Build a future where people live in harmony with nature.&lt;/q&gt;&lt;/p&gt;
+    <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+  <h3>&lt;abbr title="......"&gt;ใช้สำหรับแสดงอักษรเต็ม ของตัวอักษรย่อ เช่น ดร. Dr.</h3>
+    &lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 1948.&lt;/p&gt;
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+  <h3>&lt;address&gt;ใช้สำหรับประโยคที่เป็นที่อยู่</h3>
+    &lt;address&gt; <br>
+    Written by John Doe.<br>
+    Visit us at:<br>
+    Example.com<br>
+    Box 564, Disneyland<br>
+    USA <br>
+   &lt;/address&gt;
+    <br><br>
+   <address>
+    Written by John Doe.<br>
+    Visit us at:<br>
+    Example.com<br>
+    Box 564, Disneyland<br>
+    USA
+    </address>
+  <h3>&lt;cite&gt;ใช้สำหรับเป็นตัวบรรยาย tag ผลงานซึ่งจะแสดงผลเป็นตัว เอียงเหมือน &lt;i&gt;</h3>
+    <img src="img_the_scream.jpg" width="110" height="133" alt="The Scream">
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+  <h3>&lt;bdo dir="rtl"&gt;.....&lt;/bdo&gt;จะทำให้ประโยคนั้นเรียงกลับหลัง</h3>
+    &lt;bdo&gt; dir="rtl">&lt;/bdo&gt;This line will be written from right to left&lt;/bdo&gt;<br>
+    <bdo dir="rtl">This line will be written from right to left</bdo>
+
+<hr>
+</div>
+  
+    <div class="page"><h2 id=html_comment>ในหัวข้อHTML Comments ใช้เพื่อไม่ให้ข้อความที่คอมเม้นเหล่านั้นแสดงบนหน้าจอ browser</h2>
+      <p>เช่น &lt;!-- Write your comments here --!&gt;</p>
+      <h3>ไวยากรณ์คือ &lt;!-- ............... --!&gt;</h3>
+      <hr>
+    </div>
     
-            &lt;h1&gt; My First Heading&lt;/h1&gt; <br>
-            &lt;p&gt; My first paragraph.&lt;/p&gt; <br>
-    
-            &lt;/body&gt; <br></p>
-        <p> ส่วนข้างในของตัว &lt;body&gt; นี้คือ code ที่อยู่ใน body <br><br>
-          &lt;h1&gt; My First Heading&lt;/h1&gt; <br>
-          &lt;p&gt; My first paragraph.&lt;/p&gt; <br>
+  <div class="page"><h2 id=html_color>ในหัวข้อ HTML Color สีใน Html </h2>
+    <p>สีที่แสดงผลบนจอนั้นมีหลายโหมดด้วยกัน เช่น RGB , HEX, HSL, RGBA, และ HSLA</p>
+      <h3>ใน Html เราสามารถเรียกสีได้โดยใช้ชื่อ ละมีมากถึง140สี</h3>
+        &lt;h1 style="background-color:Tomato;"&gt;Tomato&lt;/h1&gt;<br>
+
+        <h1 style="background-color:Tomato;">Tomato</h1>
+
+        &lt;h1 style="background-color:Orange;"&gt;Orange&lt;/h1&gt; <br>
+
+        <h1 style="background-color:Orange;">Orange</h1>
+
+        &lt;h1 style="background-color:DodgerBlue;"&gt;DodgerBlue&lt;/h1&gt;<br>
+
+        <h1 style="background-color:DodgerBlue;">DodgerBlue</h1>
+
+        &lt;h1 style="background-color:MediumSeaGreen;"&gt;MediumSeaGreen&lt;/h1&gt;<br>
+
+        <h1 style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
+      <h3>การใส่ Background Color</h3>
+          &lt;h1 style="background-color:DodgerBlue;"&gt;Hello World&lt;/h1&gt;
+          <h1 style="background-color:DodgerBlue;">Hello World</h1>
+          &lt;p style="background-color:Tomato;"&gt;Lorem ipsum...&lt;/p&gt;
+          <p style="background-color:Tomato;">Lorem ipsum...</p>
+
+      <h3>การใส่สีตัวอักษร Text Color</h3>
+        <h1 style="color:Tomato;">Hello World</h1>
+        <p style="color:DodgerBlue;">Lorem ipsum...</p>
+        <p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+
+        &lt;h1 style="color:Tomato;"&gt;Hello World&lt;/h1&gt; <br>
+        &lt;p style="color:DodgerBlue;"&gt;Lorem ipsum...&lt;/p&gt; <br>
+        &lt;p style="color:MediumSeaGreen;"&gt;Ut wisi enim...&lt;/p&gt; <br>
+
+      <h3>การใส่ขอบสีรอบตัวอักษร Border Color</h3>
+        <h1 style="border:2px solid Tomato;">Hello World</h1>
+        <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+
+        &lt;h1 style="border:2px solid Tomato;"&gt;Hello World&lt;/h1&gt; <br>
+        &lt;p style="border:2px solid DodgerBlue;"&gt;Hello World&lt;/p&gt; <br>
+      <h3> Color Value ในสีแต่ละโหมดนั้นจะมีเลขกำกับอยู่ซึ่งเราสามารถเรียกใช้ผ่านเลขได้เลย</h3>
+        <p>โดย syntax ของตรงนี้คือ &lt;h1 style="background-color:โหมดสี(เลขสี,เลขสี,เลขสี);"&gt;......&lt;/h&gt;</p>
+        <h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+        <p>โดย syntax ของตรงนี้คือ &lt;h1 style="background-color:รหัสสี;"&gt; .....&lt;/h&gt;</p>
+        <h1 style="background-color:#ff6347;">#ff6347</h1>
+        <p>เราสามารถเพิ่มความสว่างของสี</p>
+        <p>&lt;h1 style="background-color:rgba(255, 99, 71, 0.5);"&gt;rgba(255, 99, 71, <p style="color:red;">0.5</p>  &lt;/h1&gt;</p>
+        <h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+<hr>
+</div>
+    <div class="page"><h2 id=html_css>Html Css  </h2>
+      <p> ซึ่ง Css นั้นย่อมาจาก  Cascading Style Sheets มีไว้สำหรับจัดโครงสร้างของ webpage
+          <br> โดย CSS เราได้ทำการเขียนไปแล้วบ้างในหัวข้อก่อนโดยที่เราไม่รู้ตัว
+          <br> โดย CSS นั้นการเขียนมีทั้งหด 3 แบบ
+          <br>Inline คือใช้ในบรรทัด ซึ่งที่ผ่านมาเราได้ใช้ตัวนี้มาพอสมควร
+          <br>Internal  จะประกาศใช้ใน1ส่วนของโครง Html เช่น &lt;Head&gt;...ถึง...&lt;/Head&gt;
+          <br>External  จะประกาศใช้จากไฟล์ภายนอก Html
         </p>
-        <p> ซึ่ง &lt;h1&gt;....&lt;/h1&gt; ไว้สำหรับเขียน heading1 (หัวข้อที่1) <br>
-        การที่มี &lt;h1&gt;....&lt;/h1&gt; การมีเลข 1 เท่ากับว่าสามารถมี &lt;h2&gt;&lt;/h2&gt; , &lt;h3&gt;&lt;/h3&gt;...ถึง &lt;h6&gt;&lt;/h6&gt; <br>
-        ซึ่ง  &lt;p&gt;....&lt;p&gt; ไว้สำหรับเขียน paragraph <br>
-        &lt;br&gt; ไว้สำหรับเริ่มไปบรรทัดใหม่
-
-      <h3>พิมพ์ใหญ่ กับ พิมพ์เล็ก จะไม่ใช่คำสั่งเดียวกันใน HTML</h3> 
-        <p>เช่น <br>&lt;P&gt; ไม่ได้มีการทำงานเหมือนกับ &lt;p&gt;
-        <br>
-  <hr>    
-    <h2>&lt;HTML Attribute&gt;</h2>
-      <h3>&lt;a&gt; เป็น tag ที่ใช้สำหรับกำหนด hyperlink href=..... ใส่เป็น URL</h3>
-        &lt;a href="https://www.w3schools.com">Visit W3Schools&lt;/a&gt;<br>
-        <a href="https://www.w3schools.com">Visit W3Schools</a>
-      <h3>src Attribute เราใช้ tag นี้ไว้ฝังภาพลงไปบนเว็บไซต์ เช่น</h3>
-        &lt;img src="img_girl.jpg"&gt;
-        <img src="img_girl.jpg">
-      <h3>width และ height Attribute ไว้สำหรับ</h3>
-        &lt;img src="img_girl."jpg width="500" height="600"&gt;
-      <h3>alt Attribute เป็น attribute สำหรับ tag &lt;img&gt; ใช้เพื่อแสดงประโยคเพื่อบ่งบอกว่าภาพนี้เป็นภาพอะไรในกรณีที่ ไม่สามารถแสดงภาพได้จากสาเหตุด้าน internet</h3>
-        &lt;img src="img_typo.jpg" alt="Girl with a jacket"&gt; <br>
-        <img src="img_typo.jpg" alt="Girl with a jacket">
-      <h3>style Attribute ใช้สำหรับเพิ่ม color font size และอื่นๆให้กับประโยค</h3>
-        &lt;p style="color:red;"&gt;This is a red paragraph.&lt;/p&gt;
-        <p style="color:red;">This is a red paragraph.</p>
-  <hr>
-    <h2>ในหัวข้อ &lt; HTML Heading &gt; </h2>
-      <p>Heading หมานถึวหัวข้อ ข้อความการประกาศ Heading นี้จะใข้ Tag &lt;h1&gt;, &lt;h2&gt; ,&lt;h3&gt; ไปจนถึง 6
-        เช่นตัวอย่างนี้</p>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
-
-        <p>โดยเรียงลำดับความสำคัญ จากเลขจ้อยไปมาก</p>
-        <p>โดยปกติมักจะใช้  &lt;h1&gt; เป็นหัวข้อหลัก &lt;h2&gt; หัวข้อรองลงมา &lt;h3&gt;ก็รองลงมา เรื่อยๆอีก </p>
-      <h3>หากต้องการเพิ่มขนาดของ Heading เราจะใช้ attribute ของ option style ที่ชื่อว่า font-size </h3>
-         <p> &lt;h1&gt; style="font-size:60px;">Heading 1 &lt;/h1&gt; <br>
-          ผลลัพธ์ที่ได้จะเป็นดังข้างล่าง </p>
-        <h1 style="font-size:60px;">Heading 1</h1>
-
-  <hr>
-    <h2>ในหัวข้อ &lt; HTML Paragraphs &gt; </h2>
-      <p>ใน HTML เราใช้คำ Tag  &lt;p&gt; เพื่อทำการกำหนดว่า นี่คือประโยค โดยทุกครั้งที่ใช้งาน Tag จะทำการขึ้นบรรทัดใหม่
-        เช่น <br>    </p>
-        &lt;p&gt; This is a paragraph. &lt;/p&gt;<br>
-        &lt;p&gt; This is another paragraph. &lt;/p&gt; <br>
-        <p>เมื่อเปิดผ่าน Browser จะได้ผลลัพธ์ได้ดังนี้</p>
-        <p>This is a paragraph.</p>
-        <p>This is another paragraph.</p>
-
-      <h3> เราไม่สามารถทราบได้ถึงขนาดของหน้าจอ(Display)ของผู้เข้าดูได้แต่ HTML นั้นจะทำการจัดการพื้นที่ของข้อความให้อัตโนมัติ  </h3>
-      เช่น
-      &lt;p&gt;
-        This paragraph<br>
-        contains a lot of lines<br>
-        in the source code,<br>
-        but the browser<br>
-        ignores it.<br>
-        &lt;/p&gt;
-      <p>การแสดงผลลัพธ์จะเห็นดังข้างล่าง</p>
-      <p>
-      This paragraph
-      contains a lot of lines
-      in the source code,
-      but the browser
-      ignores it.
+      <p><b>Inline Css</b> เช่น
+        <br>&lt;h1 style="color:blue;"&gt;A Blue Heading&lt;/h1&gt;
       </p>
-    <h3>Tag &lt;hr&gt;ไว้สำหรับขีดเส้นใต้หน้าใน HTML </h3>
-      <p>เช่นเส้นใต้นี้ </p>
-  <hr>
-      <p>เป็นต้น</p>
-
-    <h3>Tag &lt;br&gt; (Line Break) ไว้สำหรับขึ้นบรรทัดใหม่ </h3>
-     <p>เช่น <br> 
-      &lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt; </p>
-      <p>ผลลัพธ์ที่ได้คือ</p>
-      <p>This is<br>a paragraph<br>with line breaks.</p>
-    <h3> Tag &lt;pre&gt; ใช้สำหรับการแสดงข้อความที่จะออกมาเป็นเหมือนที่เราพิมพ์ใน HTML</h3> 
-      <p>ถ้าเราทำการพิมพ์</p>
-      &lt;pre&gt;
-          My Bonnie lies over the ocean.<br>
-        <br>
-          My Bonnie lies over the sea.<br>
-        <br>
-          My Bonnie lies over the ocean.<br>
-        <br>
-          Oh, bring back my Bonnie to me.<br>
-          &lt;/pre&gt;
-        <p>ผลลัพธ์ที่ได้จะเป็นเหมือนที่พิมพ์ไป</p>
-        <pre>
-            My Bonnie lies over the ocean.
+      <p><b>Internal Css</b> ใช้กับ Html ในไฟล์นั้นๆ หรือ 1 Page นั่นเอง
+        <br><b>โดยจะกำหนดที่ส่วนของ &lt;Head&gt; ใน &lt;style&gt; </b>
+      </p>  
+        <p> 
+        <br>&lt;head&gt;
+        <br>&lt;style&gt;
+        <br>body {background-color: powderblue;}
+        <br> h1   {color: blue;}
+        <br>  p    {color: red;}
+        <br>&lt;/style&gt;
+        <br>&lt;/head&gt;
+      </p>
+      <p><b>External Css</b> คือการกำหนดผ่านไฟล์ภายนอก ใช้กับ Html หลายๆไฟล์ได้</p>
+        <p>&lt;head&gt;
+          <br>&lt;link rel="stylesheet" href="styles.css"&gt;
+          <br>&lt;/head&gt; </p>
           
-            My Bonnie lies over the sea.
-          
-            My Bonnie lies over the ocean.
-          
-            Oh, bring back my Bonnie to me.
-          </pre>
-  <hr>
-    <h2>ในหัวข้อ &lt; HTML Style &gt; </h2>
-        <p>style เป็น attribute ที่ใช้สำหรับเพิ่มelement(สี,ฟ้อนต์,ขนาดและอื่นๆ)</p>
-        <p>เช่น</p>
-        <p>I am normal</p>
-        <p style="color:red;">I am red</p>
-        <p style="color:blue;">I am blue</p>
-        <p style="font-size:50px;">I am big</p>
-        <p>จากโค้ด
-        <p>I am normal<br>
-          &lt;p style="color:red;"&gt;I am red &lt/p&gt; <br>
-          &lt;p style="color:blue;"&gt;I am blue &lt/p&gt;<br>
-          &lt;p style="font-size:50px;"&gt;I am big &lt/p&gt;</p>
+        <p>นี่คือการเรียกใช้ ไฟล์ css
+          <br>body {
+          <br>background-color: powderblue;
+          <br>  }
+          <br>h1 {
+          <br> color: blue;
+          <br>  }
+          <br>p {
+          <br> color: red;
+          <br>  }
+        </p>
 
-      <h3>syntax หรือ ไวยากรณ์ของ style จะเป็นดังโครงสร้างนี้</h3>
-        <p> &lt; tagname &gt; style="property:value;" &lt;/tagname&gt;</p>
+        <h3>วึ่งรูปแบบการเขียนจะเป็นอย่างนี้</h3>
+          <p> ชื่อแท็ก { 
+              <br>       property: optiion ที่กำหนด
+              <br>}
+          </p>
+        <h3>Css property ที่ใช้บ่อยในการเขียน html</h3>
+          <p> Css Color ไว้กำหนดสีที่จะใช้
+          <br>Css font-family ไว้กำหนดรูปแบบอักษร
+          <br>Css font-size ไว้กำหนดขนาดของตัวอักษร
+          <br>Css border กำหนดขอบครอบตัวอักษร
+          <br>Css padding กำหนดระยะห่างระหว่างตัวอักษร กับ ขอบ
+          <br>Css margin กำหนดระยะห่างของ ขอบและ ข้างนอก
+          </p>
+    <hr>
+  </div>
+    
+      <h3 id=html_link>HTML Links</h3>
 
-  <h3>การใส่สีพื้นหลังทั้งหน้า Page</h3>
-    <p> &lt;body&gt; style="background-color:powderblue;"&gt; <br>
-    &lt;h1&gt;This is a heading &lt; /h1 &gt; <br>
-    &lt;p&gt;This is a paragraph. &lt; /p &gt; <br>
-    &lt;/body&gt; </p>
-  <h3>การใส่สีพื้นหลังเฉพาะบรรทัด</h3>
-    <h1 style="background-color:powderblue;">This is a heading</h1>
-    <p style="background-color:tomato;">This is a paragraph.</p>
-    <p>จากโค้ด<br>
-      &lt;h1 style="background-color:powderblue;"&gt;This is a heading&lt;/h1&gt;<br>
-      &lt;p style="background-color:tomato;"&gt;This is a paragraph.&lt;/p&gt;
-    </p>
-  <h3>การใส่สีตัวอักษร</h3>
-    <h1 style="color:blue;">This is a heading</h1>
-    <p style="color:red;">This is a paragraph.</p>
-    <p>จากโค้ด<br>
-      &lt;h1 style="color:blue;"&gt;This is a heading&lt;/h1&gt;<br>
-      &lt;p style="color:red;"&gt;This is a paragraph.&lt;/p&gt;</p>
-  <h3>รูปแบบฟ้อนต์</h3>
-    <h1 style="font-family:verdana;">This is a heading</h1>
-    <p style="font-family:courier;">This is a paragraph.</p>
-    <p>จากโค้ด<br>
-      &lt; style="font-family:verdana;"&gt;This is a heading&lt;/h1&gt;<br>
-      &lt;p style="font-family:courier;"&gt;This is a paragraph.&lt;/p&gt;</p>
-  <h3>ขนาดตัวอักษร</h3>
-    <h1 style="font-size:300%;">This is a heading</h1>
-    <p style="font-size:160%;">This is a paragraph.</p>
-    <p>จากโค้ด<br>
-    &lt;h1 style="font-size:300%;"&gt;This is a heading&lt;/h1&gt;<br>
-    &lt;p style="font-size:160%;"&gt;This is a paragraph.&lt;/p&gt;
-  <h3>ตำแหน่งตัวอักษร</h3>
-    <h1 style="text-align:center;">Centered Heading</h1>
-    <p style="text-align:center;">Centered paragraph.</p>
-    <p>จากโค้ด<br>
-      &lt;h1 style="text-align:center;"&gt;Centered Heading&lt;/h1&gt; <br>
-      &lt;p style="text-align:center;"&gt;Centered paragraph.&lt;/p&gt;
-  <hr>
-    <h2>ในหัวข้อ &lt; HTML Formatting &gt; </h2>
-        <p>ลักษณะพิเศษที่สามารถใช้งานกับ ตัวอักษร มีดังนี้</p>
-          &lt;b&gt; - Bold text <br>
-          &lt;strong&gt; - Important text <br>
-          &lt;i&gt; - Italic text <br>
-          &lt;em&gt; - Emphasized text <br>
-          &lt;mark&gt; - Marked text <br>
-          &lt;small&gt; - Smaller text <br>
-          &lt;del&gt; - Deleted text <br>
-          &lt;ins&gt; - Inserted text <br>
-          &lt;sub&gt; - Subscript text <br>
-          &lt;sup&gt; - Superscript text <br>
-        <h3>&lt;b&gt;และ&lt;strong&gt; ทำให้ตัวอักษรหน้าเหมือนกัน อย่างตัวอย่างข้างล่าง</h3>
-          <b>This text is bold</b>
-        <h3>&lt;i&gt;และ&lt;em&gt; ทำให้ตัวอักษรเอียง อย่างตัวอย่างข้างล่าง</h3>
-          <i>This text is italic</i>
-        <h3> &lt;small&gt; ทำให้ตัวอักษรเล็กกว่าปกติ</h3>
-          <small>This is some smaller text.</small>
-        <h3>&lt;mark&gt;ทำการ Highlight ตัวอักษรนั้น</h3>
-          <p>Do not forget to buy <mark>milk</mark> today.</p>
-        <h3>&lt;del&gt;ทำการขีดค่าตัวอักษรนั้น</h3>
-          <p>My favorite color is <del>blue</del> red.</p>
-        <h3>&lt;ins&gt;ทำการขีดเส้นใต้ตัวอักษรนั้น</h3>
-          <p>My favorite color is blue <ins>red</ins>.</p>
-        <h3>&lt;sub&gt;ทำให้ตัวอักษรเป็นตัวไขว้ใต้ตัวปกติ</h3>
-          <p>This is <sub>subscripted</sub> text.</p>
-        <h3>&lt;sub&gt;ทำให้ตัวอักษรเป็นตัวไขว้ใต้ตัวปกติ</h3>
-          <p>This is <sup>superscripted</sup> text.</p>
-  <hr>
-    <h2>ในหัวข้อ HMTL Quotation and Citation Elements</h2>
-      <h3>&lt; blockquote&gt; ใช้สำหรับตประโยคที่นำมาจากแหล่งอื่น ตัวประโยคจะถูกย้อหน้า เช่นตัวอย่าง</h3>
-        &lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt; <br>
-          For 50 years, WWF has been protecting the future of nature.The world's leading conservation <br>
-          organization,WWF works in 100 countries and is supported by1.2 million members in the <br>
-          United States andclose to 5 million globally. <br>
-        &lt;/blockquote&gt;
-        <blockquote cite="http://www.worldwildlife.org/who/index.html">
-          For nearly 60 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by more than one million members in the United States and close to five million globally.
-        </blockquote>
-      <h3>&lt;q&gt;ใช้สำหรับเครื่องหมายคำพูดในประโยค</h3>
-        &lt;p&gt;WWF's goal is to: &lt;q&gt;Build a future where people live in harmony with nature.&lt;/q&gt;&lt;/p&gt;
-        <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
-      <h3>&lt;abbr title="......"&gt;ใช้สำหรับแสดงอักษรเต็ม ของตัวอักษรย่อ เช่น ดร. Dr.</h3>
-        &lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 1948.&lt;/p&gt;
-        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
-      <h3>&lt;address&gt;ใช้สำหรับประโยคที่เป็นที่อยู่</h3>
-        &lt;address&gt; <br>
-        Written by John Doe.<br>
-        Visit us at:<br>
-        Example.com<br>
-        Box 564, Disneyland<br>
-        USA <br>
-       &lt;/address&gt;
-        <br><br>
-       <address>
-        Written by John Doe.<br>
-        Visit us at:<br>
-        Example.com<br>
-        Box 564, Disneyland<br>
-        USA
-        </address>
-      <h3>&lt;cite&gt;ใช้สำหรับเป็นตัวบรรยาย tag ผลงานซึ่งจะแสดงผลเป็นตัว เอียงเหมือน &lt;i&gt;</h3>
-        <img src="img_the_scream.jpg" width="110" height="133" alt="The Scream">
-        <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
-      <h3>&lt;bdo dir="rtl"&gt;.....&lt;/bdo&gt;จะทำให้ประโยคนั้นเรียงกลับหลัง</h3>
-        &lt;bdo&gt; dir="rtl">&lt;/bdo&gt;This line will be written from right to left&lt;/bdo&gt;<br>
-        <bdo dir="rtl">This line will be written from right to left</bdo>
 
-  <hr>
-    <h2>ในหัวข้อHTML Comments ใช้เพื่อไม่ให้ข้อความที่คอมเม้นเหล่านั้นแสดงบนหน้าจอ browser</h2>
-        <p>เช่น &lt;!-- Write your comments here --!&gt;</p>
-        <h3>ไวยากรณ์คือ &lt;!-- ............... --!&gt;</h3>
-  <hr>
-    <h2>ในหัวข้อ HTML Color สีใน Html </h2>
-      <p>สีที่แสดงผลบนจอนั้นมีหลายโหมดด้วยกัน เช่น RGB , HEX, HSL, RGBA, และ HSLA</p>
-        <h3>ใน Html เราสามารถเรียกสีได้โดยใช้ชื่อ ละมีมากถึง140สี</h3>
-          &lt;h1 style="background-color:Tomato;"&gt;Tomato&lt;/h1&gt;<br>
 
-          <h1 style="background-color:Tomato;">Tomato</h1>
 
-          &lt;h1 style="background-color:Orange;"&gt;Orange&lt;/h1&gt; <br>
 
-          <h1 style="background-color:Orange;">Orange</h1>
-
-          &lt;h1 style="background-color:DodgerBlue;"&gt;DodgerBlue&lt;/h1&gt;<br>
-
-          <h1 style="background-color:DodgerBlue;">DodgerBlue</h1>
-
-          &lt;h1 style="background-color:MediumSeaGreen;"&gt;MediumSeaGreen&lt;/h1&gt;<br>
-
-          <h1 style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
-        <h3>การใส่ Background Color</h3>
-            &lt;h1 style="background-color:DodgerBlue;"&gt;Hello World&lt;/h1&gt;
-            <h1 style="background-color:DodgerBlue;">Hello World</h1>
-            &lt;p style="background-color:Tomato;"&gt;Lorem ipsum...&lt;/p&gt;
-            <p style="background-color:Tomato;">Lorem ipsum...</p>
-
-        <h3>การใส่สีตัวอักษร Text Color</h3>
-          <h1 style="color:Tomato;">Hello World</h1>
-          <p style="color:DodgerBlue;">Lorem ipsum...</p>
-          <p style="color:MediumSeaGreen;">Ut wisi enim...</p>
-
-          &lt;h1 style="color:Tomato;"&gt;Hello World&lt;/h1&gt; <br>
-          &lt;p style="color:DodgerBlue;"&gt;Lorem ipsum...&lt;/p&gt; <br>
-          &lt;p style="color:MediumSeaGreen;"&gt;Ut wisi enim...&lt;/p&gt; <br>
-
-        <h3>การใส่ขอบสีรอบตัวอักษร Border Color</h3>
-          <h1 style="border:2px solid Tomato;">Hello World</h1>
-          <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
-
-          &lt;h1 style="border:2px solid Tomato;"&gt;Hello World&lt;/h1&gt; <br>
-          &lt;p style="border:2px solid DodgerBlue;"&gt;Hello World&lt;/p&gt; <br>
-        <h3> Color Value ในสีแต่ละโหมดนั้นจะมีเลขกำกับอยู่ซึ่งเราสามารถเรียกใช้ผ่านเลขได้เลย</h3>
-          <p>โดย syntax ของตรงนี้คือ &lt;h1 style="background-color:โหมดสี(เลขสี,เลขสี,เลขสี);"&gt;......&lt;/h&gt;</p>
-          <h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
-          <p>โดย syntax ของตรงนี้คือ &lt;h1 style="background-color:รหัสสี;"&gt; .....&lt;/h&gt;</p>
-          <h1 style="background-color:#ff6347;">#ff6347</h1>
-          <p>เราสามารถเพิ่มความสว่างของสี</p>
-          <p>&lt;h1 style="background-color:rgba(255, 99, 71, 0.5);"&gt;rgba(255, 99, 71, <p style="color:red;">0.5</p>  &lt;/h1&gt;</p>
-          <h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
-  <hr>
-     
-
+    </div>
   </body>
 </html>
