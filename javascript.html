@@ -13,20 +13,22 @@
     <body>
         <div class="language">
             <a href="index.html" target="_self">Html</a><br>
-            <a href="javascript.html" target="_self">Java language</a>
+            <a href="javascript.html" target="_self">Java Script</a>
         </div>
         <div class="list_container">
             <p class="contents_title">เนื้อหา</p>
             <div class="list">
-                <a href="#Intro">JS Introduction</a><br>
-                <a href="#Where2">JS Where To</a>
+                <a href="#js_Intro">JS Introduction</a><br>
+                <a href="#js_Where2">JS Where To</a><br>
+                <a href="#js_output">JS Output</a>
+
             </div>
           </div>
         
           <div class="content">
                 <div class="page">
                     <div class="head">
-                        <h2 id=Intro>Introduction to JavaScript</h2>
+                        <h2 id=js_Intro>Introduction to JavaScript</h2>
                     </div>
                     <div class="paragraph">
                         <p>JavaScript เป็นภาษาที่ได้รับความนิยมมากที่สุดในโลกเป็นภาษาที่ใช้สำหรับการเขียนเว็บไซต์
@@ -38,9 +40,13 @@
                         <h3>JavaScript สามารถเปลี่ยนแปลงเนื้อหาของ Html ได้</h3>
                             <p>ยกตัวอย่างเช่น method ที่มีชื่อว่า  getElementById()<br>
                             โดยการทำนคือจะแสดงสิ่งที่อยู๋ใน parameter(id) หากมีการกดปุ่มจะเปลี่ยนข้อมูลที่แสดงเป็นภายในแทน <br>
-                            &lt;p id="demo"&gt;JavaScript can change HTML content.&lt;/p&gt;<br>
-                            &lt;button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'<br>
-                            &gt;Click Me!&lt;/button&gt;
+                            <pre>
+                                &lt;p id="demo"&gt;JavaScript can change HTML content.&lt;/p&gt;<br>
+                                &lt;button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'<br>&gt;
+                                Click Me!
+                                &lt;/button&gt;
+                            </pre>
+                            
                             </p>  
                         <div class="method_display">
                             <p id="demo1">JavaScript can change HTML content.</p>
@@ -74,7 +80,62 @@
                 </div>
                 <div class="page">
                     <div class="head">
-                        <h2 id=Where2>JavaScript Where To</h2>
+                        <h2 id=js_Where2>JavaScript Where To</h2>
+                    </div>
+                    <div class="paragraph">
+                        <p>เราจะเขียนJava Script ให้อยู่ใน tag &lt;script&gt;......&lt;/script&gt; </p>
+                        <h3>Function and Event</h3>
+                        <p>ใน javascript เราจะเขียนไว้ใน Function tag &lt;script&gt; และใช้งานโดยใช้คำว่า 'Called'<br>
+                        และเมื่อเรา called function แล้วเราจะเรียกเหตุการณ์ที่เกิดว่า Event  
+                        </p>
+                        <h3>เราสามารถสร้างไฟล์ script ได้ทั้ง head และ  body</h3>
+                        <p>โดยถ้าหากเราวาง script ไว้ส่วนล่างของ body หรือก็คือไว้ข้างล่าง<br>
+                        จะช่วยเพิ่มความเร็วในการแสดงผลของ browserได้เพราะว่า script ใช้เวลาในการอ่านนาน</p>
+                        ตัวอย่างการกำหนดฟังก์ชั่น
+                        <pre>
+                        &lt;head&gt;<br>
+                            &lt;script&gt;<br>
+                                function myFunction() {<br>
+                                    document.getElementById("demo").innerHTML = "Paragraph changed.";<br>
+                                }<br>
+                            &lt;/script&gt;<br>
+                        &lt;/head&gt;<br>
+                        </pre>
+                        <pre>
+                            &lt;body&gt;<br>
+                                &lt;script&gt;<br>
+                                    function myFunction() {<br>
+                                        document.getElementById("demo").innerHTML = "Paragraph changed.";<br>
+                                    }<br>
+                                &lt;/script&gt;<br>
+                            &lt;/body&gt;<br>
+                            </pre>          
+                        <h3>External JavaScript</h3>  
+                            <p>เราสามารถนำไฟล์ JavaScriptเข้ามาใช้ได้<br>
+                            โดยไฟล์จะนามสกุล .js
+                            โดยเขียนได้ดังนี้<br>
+                            <pre>
+                                &lt;script src="myScript.js"&gt;&lt;/script&gt;;
+                            </pre>
+                            โดยการเขียน .js จะไม่จำเป็นต้องมีการทำ tag &lt;script&gt;......&lt;/script&gt;<br>
+                            ข้อดีของการนำไฟล์ .js ไว้ภายนอก Html<br>
+                            1.ทำให้ HTML กับ Code js แยกกันดูง่าย<br>
+                            2.ทำให้ HTML และ  javascript อ่านง่าน<br>
+                            3.Cached JavaScript files ช่วยให้โหลดหน้า เว็บเร็วขึ้น
+                            </p>
+                        <h3>เราสามารถนำ script จากภายนอกมาใช้ได้</h3>
+                        <p>External Script ไม่ได้จำกัดที่ว่าต้องมาจากไฟล์ภายในเครื่อง<br>
+                        สามารถมาจากเว็บไซต์อื่นก็ได้ เช่น<br>
+                        <pre>&lt;script src="https://www.w3schools.com/js/myScript1.js"&gt;&lt;/script&gt;&lt;/p&gt; <br></pre>    
+                        มาจากไฟล์ใน folder อื่น เช่น<br>
+                        <pre>&lt;script src="/js/myScript1.js"&gt;&lt;/script&gt;&lt;/p&gt;<br></pre>
+                        มาจากไฟล์อื่น เช่น<br>
+                        <pre>&lt;script src="myScript1.js"&gt;&lt;/script&gt;&lt;/p&gt;</pre> 
+                    </div>
+                </div>
+                <div class="page">
+                    <div class="head">
+                        <h2 id=js_output>JavaScript Output</h2>
                     </div>
                     <div class="paragraph">
 
