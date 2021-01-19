@@ -1,5 +1,3 @@
-body {
-  }
 h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
@@ -12,3 +10,20 @@ h3{
 p {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   } 
+.heading{
+  padding-left: 15%
+  }
+.language{
+  right: 10px;
+  position:fixed;
+}
+.list_container{
+
+  position:fixed;
+}
+.content{
+  padding-left: 15%;
+}
+html{
+  scroll-behavior:smooth;
+}
