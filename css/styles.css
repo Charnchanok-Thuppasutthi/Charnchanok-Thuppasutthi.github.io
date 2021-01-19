@@ -12,18 +12,25 @@ p {
   } 
 .heading{
   padding-left: 15%
+  
   }
 .language{
   right: 10px;
   position:fixed;
-}
+} 
 .list_container{
-
   position:fixed;
 }
 .content{
-  padding-left: 15%;
+  padding-left: 10%;
 }
 html{
   scroll-behavior:smooth;
+  font-size: 120% ;
+}
+a{
+  text-decoration: none;
+}
+.head{
+  background-color:gray;
 }

@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <!--Heading-->
     <div class="heading">
-    <h1 style="text-align:center;"> HTML </h1>
+      <h1 style="text-align:center;"> HTML </h1>
       <p>ตัวผู้เขียนทำการอธิบายที่ได้ศึกษา HTML โดยใช้เว็บอ้างอิงคือ <a href="https://www.w3schools.com/html/default.asp" target="_blank" ><b>w3schools</b></a></p>
     </div>
   </head>
@@ -15,61 +15,71 @@
       <a href="javascript.html" target="_blank">Java language</a>
     </div>
     <div class="list_container">
+      <nav>
       <p class="contents_title">เนื้อหา</p>
       <div class="list">
-          <a href="#html_element">หัวข้อ HTML Elements</a><br>
-          <a href="#html_attribute">หัวข้อ HTML Attribute</a><br>
-          <a href="#html_heading">หัวข้อ HTML Heading</a><br>
-          <a href="#html_paragraphs">หัวข้อ HTML Paragraphs</a><br>
-          <a href="#html_style">หัวข้อ HTML Styles</a><br>
-          <a href="#html_formatting">หัวข้อ HTML Text Format</a><br>
-          <a href="#html_quotation">หัวข้อ HTML Quotation </a><br>
-          <a href="#html_comment">หัวข้อ HTML Comments</a><br>
-          <a href="#html_color">หัวข้อ HTML Colors</a><br>
-          <a href="#html_css">หัวข้อ HTML CSS</a><br>
-          <a href="#html_link">หัวข้อ HTML Link</a><br>
+          <a href="#html_element">Elements</a><br>
+          <a href="#html_attribute">Attribute</a><br>
+          <a href="#html_heading">Heading</a><br>
+          <a href="#html_paragraphs">Paragraphs</a><br>
+          <a href="#html_style">Styles</a><br>
+          <a href="#html_formatting">text Format</a><br>
+          <a href="#html_quotation">Quotation </a><br>
+          <a href="#html_comment">Comments</a><br>
+          <a href="#html_color">Colors</a><br>
+          <a href="#html_css">CSS</a><br>
+          <a href="#html_link">Link</a><br>
+          <a href="#html_img">img</a><br>
       </div>
+    </nav>
     </div>
 
       <!--Section1-->
     <div class ="content">
       <div class = "page">
-        <h2 id=html_element>ในหัวข้อ &lt; HTML Elements &gt; </h2>
-          <p> คำว่า Elements จะนิยามถึงทุกอย่างที่เริ่มจาก tag เปิดจนถึงปิด โดย มี tag <br>
-          <h3> Elements สามารถติดกันได้ คือสามารถเรียกใช้หลายๆ tag พร้อมกันได้  </h3>
-            <p>ยกตัวอย่างCode</p>
-              <p> &lt;!DOCTYPE html&gt; <br>
-              &lt;html&gt; <br>
-              &lt;body&gt; <br><br>
-              &lt;h1&gt; My First Heading&lt;/h1&gt; <br>
-              &lt;p&gt; My first paragraph.&lt;/p&gt; <br><br>
-              &lt;/body&gt; <br>
-              &lt;/html&gt;  <br> 
-            <p>จะเห็นได้ว่า &lt;html&gt;&lt;body&gt;&lt;h1&gt; สามารถติดกันได้<br>
-               ส่วน code ที่อยู่ใน &lt;html&gt จนถึงฝั่งปิด(&lt;/html&gt) จะเป็นส่วนทั้งหมดของ file HTML นั้นๆ 
-               หรือก็คือส่วน <br><br>
-                &lt;body&gt; <br>
+        <div class ="head">
+          <h2 id=html_element>ในหัวข้อ &lt; HTML Elements &gt; </h2>
+        </div>
+          <div class="paragraph">
+            <p> คำว่า Elements จะนิยามถึงทุกอย่างที่เริ่มจาก tag เปิดจนถึงปิด โดย มี tag <br>
+            <h3> Elements สามารถติดกันได้ คือสามารถเรียกใช้หลายๆ tag พร้อมกันได้  </h3>
+              <p>ยกตัวอย่างCode</p>
+                <p> &lt;!DOCTYPE html&gt; <br>
+                &lt;html&gt; <br>
+                &lt;body&gt; <br><br>
+                &lt;h1&gt; My First Heading&lt;/h1&gt; <br>
+                &lt;p&gt; My first paragraph.&lt;/p&gt; <br><br>
+                &lt;/body&gt; <br>
+                &lt;/html&gt;  <br> 
+              <p>จะเห็นได้ว่า &lt;html&gt;&lt;body&gt;&lt;h1&gt; สามารถติดกันได้<br>
+                ส่วน code ที่อยู่ใน &lt;html&gt จนถึงฝั่งปิด(&lt;/html&gt) จะเป็นส่วนทั้งหมดของ file HTML นั้นๆ 
+                หรือก็คือส่วน <br><br>
+                  &lt;body&gt; <br>
+                  &lt;h1&gt; My First Heading&lt;/h1&gt; <br>
+                  &lt;p&gt; My first paragraph.&lt;/p&gt; <br>
+                  &lt;/body&gt; <br></p>
+              <p>ส่วนข้างในของตัว &lt;body&gt; นี้คือ code ที่อยู่ใน body <br><br>
                 &lt;h1&gt; My First Heading&lt;/h1&gt; <br>
                 &lt;p&gt; My first paragraph.&lt;/p&gt; <br>
-                &lt;/body&gt; <br></p>
-            <p>ส่วนข้างในของตัว &lt;body&gt; นี้คือ code ที่อยู่ใน body <br><br>
-              &lt;h1&gt; My First Heading&lt;/h1&gt; <br>
-              &lt;p&gt; My first paragraph.&lt;/p&gt; <br>
-            </p>
-           <p> ซึ่ง &lt;h1&gt;....&lt;/h1&gt; ไว้สำหรับเขียน heading1 (หัวข้อที่1) <br>
-              การที่มี &lt;h1&gt;....&lt;/h1&gt; การมีเลข 1 เท่ากับว่าสามารถมี &lt;h2&gt;&lt;/h2&gt; , &lt;h3&gt;&lt;/h3&gt;...ถึง &lt;h6&gt;&lt;/h6&gt; <br>
-              ซึ่ง  &lt;p&gt;....&lt;p&gt; ไว้สำหรับเขียน paragraph <br>
-              &lt;br&gt; ไว้สำหรับเริ่มไปบรรทัดใหม่
+              </p>
+            <p> ซึ่ง &lt;h1&gt;....&lt;/h1&gt; ไว้สำหรับเขียน heading1 (หัวข้อที่1) <br>
+                การที่มี &lt;h1&gt;....&lt;/h1&gt; การมีเลข 1 เท่ากับว่าสามารถมี &lt;h2&gt;&lt;/h2&gt; , &lt;h3&gt;&lt;/h3&gt;...ถึง &lt;h6&gt;&lt;/h6&gt; <br>
+                ซึ่ง  &lt;p&gt;....&lt;p&gt; ไว้สำหรับเขียน paragraph <br>
+                &lt;br&gt; ไว้สำหรับเริ่มไปบรรทัดใหม่
 
-          <h3>พิมพ์ใหญ่ กับ พิมพ์เล็ก จะไม่ใช่คำสั่งเดียวกันใน HTML</h3> 
-            <p>เช่น <br>&lt;P&gt; ไม่ได้มีการทำงานเหมือนกับ &lt;p&gt;
-            <br>
-          <hr>    
+            <h3>พิมพ์ใหญ่ กับ พิมพ์เล็ก จะไม่ใช่คำสั่งเดียวกันใน HTML</h3> 
+              <p>เช่น <br>&lt;P&gt; ไม่ได้มีการทำงานเหมือนกับ &lt;p&gt;
+              <br>
+            <hr>  
+          </div>  
       </div>
 
       <!--Section2-->
       <div class="page">
-        <h2 id=html_attribute>&lt;HTML Attribute&gt;</h2>
+        <div class ="head">
+          <h2 id=html_attribute>&lt;HTML Attribute&gt;</h2>
+        </div>
+        <div class="paragraph">
           <h3>&lt;a&gt; เป็น tag ที่ใช้สำหรับกำหนด hyperlink href=..... ใส่เป็น URL</h3>
             &lt;a href="https://www.w3schools.com">Visit W3Schools&lt;/a&gt;<br>
             <a href="https://www.w3schools.com">Visit W3Schools</a>
@@ -85,11 +95,15 @@
             &lt;p style="color:red;"&gt;This is a red paragraph.&lt;/p&gt;
             <p style="color:red;">This is a red paragraph.</p>
           <hr>
+        </div>
       </div>
 
       <!--Section3-->
       <div class="page">
-        <h2 id=html_heading>ในหัวข้อ &lt; HTML Heading &gt; </h2>
+        <div class="head">
+          <h2 id=html_heading>ในหัวข้อ &lt; HTML Heading &gt; </h2>
+       </div>
+        <div class="paragraph">
             <p>Heading หมานถึวหัวข้อ ข้อความการประกาศ Heading นี้จะใข้ Tag &lt;h1&gt;, &lt;h2&gt; ,&lt;h3&gt; ไปจนถึง 6
               เช่นตัวอย่างนี้</p>
               <h1>Heading 1</h1>
@@ -105,12 +119,16 @@
             <p> &lt;h1&gt; style="font-size:60px;">Heading 1 &lt;/h1&gt; <br>
               ผลลัพธ์ที่ได้จะเป็นดังข้างล่าง </p>
             <h1 style="font-size:60px;">Heading 1</h1> 
-        <hr>
+          <hr>
+        </div>
       </div>
 
       <!--section4-->
       <div class="page">
-        <h2 id=html_paragraphs>ในหัวข้อ &lt; HTML Paragraphs &gt; </h2>
+        <div class="head">
+         <h2 id=html_paragraphs>ในหัวข้อ &lt; HTML Paragraphs &gt; </h2>
+        </div>
+        <div class="paragraph">
           <p>ใน HTML เราใช้คำ Tag  &lt;p&gt; เพื่อทำการกำหนดว่า นี่คือประโยค โดยทุกครั้งที่ใช้งาน Tag จะทำการขึ้นบรรทัดใหม่
           เช่น <br>    </p>
           &lt;p&gt; This is a paragraph. &lt;/p&gt;<br>
@@ -138,8 +156,8 @@
           </p>
           <h3>Tag &lt;hr&gt;ไว้สำหรับขีดเส้นใต้หน้าใน HTML </h3>
             <p>เช่นเส้นใต้นี้ </p>
-        <hr>
-        <p>เป็นต้น</p>
+          <hr>
+          <p>เป็นต้น</p>
   
           <h3>Tag &lt;br&gt; (Line Break) ไว้สำหรับขึ้นบรรทัดใหม่ </h3>
           <p>เช่น <br> 
@@ -167,12 +185,16 @@
                 
                   Oh, bring back my Bonnie to me.
                 </pre>
-        <hr>
-      </div>
+            <hr>
+          </div>
+        </div>
 
       <!--section5-->
       <div class="page">
-        <h2 id=html_style>ในหัวข้อ &lt; HTML Style &gt; </h2>
+        <div class="head">
+          <h2 id=html_style>ในหัวข้อ &lt; HTML Style &gt; </h2>
+        </div>
+        <div class="paragraph">
             <p>style เป็น attribute ที่ใช้สำหรับเพิ่มelement(สี,ฟ้อนต์,ขนาดและอื่นๆ)</p>
             <p>เช่น</p>
               <p>I am normal</p>
@@ -224,10 +246,15 @@
               <p>จากโค้ด<br>
               &lt;h1 style="text-align:center;"&gt;Centered Heading&lt;/h1&gt; <br>
               &lt;p style="text-align:center;"&gt;Centered paragraph.&lt;/p&gt;
-        <hr>
+            <hr>
+        </div>
       </div>
+
       <div class="page">
-        <h2 id=html_formatting>ในหัวข้อ &lt; HTML Formatting &gt; </h2>
+        <div class="head">
+          <h2 id=html_formatting>ในหัวข้อ &lt; HTML Formatting &gt; </h2>
+        </div>
+        <div class="paragraph">
           <p>ลักษณะพิเศษที่สามารถใช้งานกับ ตัวอักษร มีดังนี้</p>
             &lt;b&gt; - Bold text <br>
             &lt;strong&gt; - Important text <br>
@@ -255,59 +282,73 @@
             <p>This is <sub>subscripted</sub> text.</p>
           <h3>&lt;sub&gt;ทำให้ตัวอักษรเป็นตัวไขว้ใต้ตัวปกติ</h3>
             <p>This is <sup>superscripted</sup> text.</p>
-  <hr>
+          <hr>
+        </div>
       </div>
-      <div class="page">
-        <h2 id=html_quotation>ในหัวข้อ HMTL Quotation and Citation Elements</h2>
-          <h3>&lt; blockquote&gt; ใช้สำหรับตประโยคที่นำมาจากแหล่งอื่น ตัวประโยคจะถูกย้อหน้า เช่นตัวอย่าง</h3>
-            &lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt; <br>
-              For 50 years, WWF has been protecting the future of nature.The world's leading conservation <br>
-              organization,WWF works in 100 countries and is supported by1.2 million members in the <br>
-              United States andclose to 5 million globally. <br>
-            &lt;/blockquote&gt;
-          <blockquote cite="http://www.worldwildlife.org/who/index.html">
-            For nearly 60 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by more than one million members in the United States and close to five million globally.
-          </blockquote>
-        <h3>&lt;q&gt;ใช้สำหรับเครื่องหมายคำพูดในประโยค</h3>
-          &lt;p&gt;WWF's goal is to: &lt;q&gt;Build a future where people live in harmony with nature.&lt;/q&gt;&lt;/p&gt;
-          <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
-        <h3>&lt;abbr title="......"&gt;ใช้สำหรับแสดงอักษรเต็ม ของตัวอักษรย่อ เช่น ดร. Dr.</h3>
-          &lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 1948.&lt;/p&gt;
-          <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
-        <h3>&lt;address&gt;ใช้สำหรับประโยคที่เป็นที่อยู่</h3>
-          &lt;address&gt; <br>
-          Written by John Doe.<br>
-          Visit us at:<br>
-          Example.com<br>
-          Box 564, Disneyland<br>
-          USA <br>
-        &lt;/address&gt;
-          <br><br>
-        <address>
-          Written by John Doe.<br>
-          Visit us at:<br>
-          Example.com<br>
-          Box 564, Disneyland<br>
-          USA
-          </address>
-        <h3>&lt;cite&gt;ใช้สำหรับเป็นตัวบรรยาย tag ผลงานซึ่งจะแสดงผลเป็นตัว เอียงเหมือน &lt;i&gt;</h3>
-          <img src="img_the_scream.jpg" width="110" height="133" alt="The Scream">
-          <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
-        <h3>&lt;bdo dir="rtl"&gt;.....&lt;/bdo&gt;จะทำให้ประโยคนั้นเรียงกลับหลัง</h3>
-          &lt;bdo&gt; dir="rtl">&lt;/bdo&gt;This line will be written from right to left&lt;/bdo&gt;<br>
-          <bdo dir="rtl">This line will be written from right to left</bdo>
 
-      <hr>
-      </div>
       <div class="page">
-        <h2 id=html_comment>ในหัวข้อHTML Comments ใช้เพื่อไม่ให้ข้อความที่คอมเม้นเหล่านั้นแสดงบนหน้าจอ browser</h2>
+        <div class="head">
+          <h2 id=html_quotation>ในหัวข้อ HMTL Quotation and Citation Elements</h2>
+        </div>
+        <div class="paragraph">
+            <h3>&lt; blockquote&gt; ใช้สำหรับตประโยคที่นำมาจากแหล่งอื่น ตัวประโยคจะถูกย้อหน้า เช่นตัวอย่าง</h3>
+              &lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt; <br>
+                For 50 years, WWF has been protecting the future of nature.The world's leading conservation <br>
+                organization,WWF works in 100 countries and is supported by1.2 million members in the <br>
+                United States andclose to 5 million globally. <br>
+              &lt;/blockquote&gt;
+            <blockquote cite="http://www.worldwildlife.org/who/index.html">
+              For nearly 60 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by more than one million members in the United States and close to five million globally.
+            </blockquote>
+          <h3>&lt;q&gt;ใช้สำหรับเครื่องหมายคำพูดในประโยค</h3>
+            &lt;p&gt;WWF's goal is to: &lt;q&gt;Build a future where people live in harmony with nature.&lt;/q&gt;&lt;/p&gt;
+            <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+          <h3>&lt;abbr title="......"&gt;ใช้สำหรับแสดงอักษรเต็ม ของตัวอักษรย่อ เช่น ดร. Dr.</h3>
+            &lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 1948.&lt;/p&gt;
+            <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+          <h3>&lt;address&gt;ใช้สำหรับประโยคที่เป็นที่อยู่</h3>
+            &lt;address&gt; <br>
+            Written by John Doe.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA <br>
+          &lt;/address&gt;
+            <br><br>
+          <address>
+            Written by John Doe.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+            </address>
+          <h3>&lt;cite&gt;ใช้สำหรับเป็นตัวบรรยาย tag ผลงานซึ่งจะแสดงผลเป็นตัว เอียงเหมือน &lt;i&gt;</h3>
+            <img src="img_the_scream.jpg" width="110" height="133" alt="The Scream">
+            <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+          <h3>&lt;bdo dir="rtl"&gt;.....&lt;/bdo&gt;จะทำให้ประโยคนั้นเรียงกลับหลัง</h3>
+            &lt;bdo&gt; dir="rtl">&lt;/bdo&gt;This line will be written from right to left&lt;/bdo&gt;<br>
+            <bdo dir="rtl">This line will be written from right to left</bdo>
+          <hr>
+        </div>
+      </div>
+
+      <div class="page">
+        <div class="head">
+          <h2 id=html_comment>ในหัวข้อHTML Comments </h2>
+        </div>
+        <div class="paragraph">
+          <p>ใช้เพื่อไม่ให้ข้อความที่คอมเม้นเหล่านั้นแสดงบนหน้าจอ browser</p>
           <p>เช่น &lt;!-- Write your comments here --!&gt;</p>
           <h3>ไวยากรณ์คือ &lt;!-- ............... --!&gt;</h3>
           <hr>
+        </div>
       </div>
       
     <div class="page">
-      <h2 id=html_color>ในหัวข้อ HTML Color สีใน Html </h2>
+      <div class="head">
+        <h2 id=html_color>ในหัวข้อ HTML Color สีใน Html </h2>
+      </div>  
+      <div class="paragraph">
         <p>สีที่แสดงผลบนจอนั้นมีหลายโหมดด้วยกัน เช่น RGB , HEX, HSL, RGBA, และ HSLA</p>
         <h3>ใน Html เราสามารถเรียกสีได้โดยใช้ชื่อ ละมีมากถึง140สี</h3>
             &lt;h1 style="background-color:Tomato;"&gt;Tomato&lt;/h1&gt;<br>
@@ -351,10 +392,15 @@
           <p>เราสามารถเพิ่มความสว่างของสี</p>
           <p>&lt;h1 style="background-color:rgba(255, 99, 71, 0.5);"&gt;rgba(255, 99, 71, <p style="color:red;">0.5</p>  &lt;/h1&gt;</p>
           <h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
-  <hr>
-  </div>
+        <hr>
+      </div>
+    </div>
+
       <div class="page">
-        <h2 id=html_css>Html Css  </h2>
+        <div class="head">
+          <h2 id=html_css>Html Css  </h2>
+        </div>
+        <div class="paragraph">
           <p> ซึ่ง Css นั้นย่อมาจาก  Cascading Style Sheets มีไว้สำหรับจัดโครงสร้างของ webpage
               <br> โดย CSS เราได้ทำการเขียนไปแล้วบ้างในหัวข้อก่อนโดยที่เราไม่รู้ตัว
               <br> โดย CSS นั้นการเขียนมีทั้งหด 3 แบบ
@@ -407,40 +453,56 @@
               <br>Css padding กำหนดระยะห่างระหว่างตัวอักษร กับ ขอบ
               <br>Css margin กำหนดระยะห่างของ ขอบและ ข้างนอก
               </p>
-      <hr>
-    </div>
-      <div class="page">
-        <h2 id=html_link>HTML Links</h2>
-          <p>Link เปรียบเสมือนทาง เพือ่ไปถึงจุดหมายปลายทาง(Direction)ในเว็บไซต์ โดย<br>
-          Links ใน Html นั้นจะเป็น Hyperlink คือคลิ้กแล้วไปหน้า page อื่นๆ</p>
-            <h3>ไวยากรณ์ คือ &gt;a&lt;โดยเป็นการกำหนดว่านี่คือ tag link นะ</h3>
-              <p><b>&lt;a href="url"&gt;link text&lt;/a&gt;</b><br>
-                &lt;href&gt; คือการกำหนด address ของ link</p>
-            <h3>Target Attribute ไว้สำหรับกำหนดการกระทำเมื่อกดลิ้งว่าจะเปิด หน้าใหม่หรือเปลี่ยนหน้าปัจจุบัน</h3>
-            <p>โดยจะมีดังนี้<br>
-              _self - เป็น default จะเปลี่ยนหน้าปัจจุบัน<br>
-              _blank - เปิดหน้าใหม่<br>
-              _parent - Opens the document in the parent frame<br>
-              _top - Opens the document in the full body of the window<br></p>
-              เช่น &lt;a href="https://www.w3schools.com/" target="_blank"&gt;Visit W3Schools!&lt;/a&gt;
-            <h3>Absolute URLs vs. Relative URLs</h3>
-              <p>Absolute URLs คือเว็บภายนอก<br>
-              Relative URLs คือเว็บภายในเว็บไซต์เดียวกับที่เราอยู่</p>
-            <h3>เราสามารถใช้ภาพในการคลิ้กลิงค์ได้</h3>
-            <p>&lt;a href="default.asp"&gt; กำหนดลิงค์<br> 
-              &lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"&gt;เลือกไฟล์ภาพมาใช้<br> 
-              &lt;/a&gt;</p> 
-            <h3>เราสามารถใช้ email ในการเป็น address ได้</h3>
-            &lt;a href="mailto:someone@example.com"&gt;Send email&lt;/a&gt;
-            <h3>เราสามารถใช้ ปุ่ม (Button) ในการเป็น address ได้</h3>
-            &lt;button onclick="document.location='default.asp'"&gt;HTML Tutorial&lt;/button&gt;
-            <h3>เราสามารถตั้ง title สำหรับ linkได้</h3>
-            &lt;a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section"&gt;Visit our HTML Tutorial&lt;/a&gt;
           <hr>
         </div>
+      </div>
+
+      <div class="page">
+        <div class="head">
+          <h2 id=html_link>HTML Links</h2>
+        </div>
+        <div class="paragraph">
+            <p>Link เปรียบเสมือนทาง เพือ่ไปถึงจุดหมายปลายทาง(Direction)ในเว็บไซต์ โดย<br>
+            Links ใน Html นั้นจะเป็น Hyperlink คือคลิ้กแล้วไปหน้า page อื่นๆ</p>
+              <h3>ไวยากรณ์ คือ &gt;a&lt;โดยเป็นการกำหนดว่านี่คือ tag link นะ</h3>
+                <p><b>&lt;a href="url"&gt;link text&lt;/a&gt;</b><br>
+                  &lt;href&gt; คือการกำหนด address ของ link</p>
+              <h3>Target Attribute ไว้สำหรับกำหนดการกระทำเมื่อกดลิ้งว่าจะเปิด หน้าใหม่หรือเปลี่ยนหน้าปัจจุบัน</h3>
+              <p>โดยจะมีดังนี้<br>
+                _self - เป็น default จะเปลี่ยนหน้าปัจจุบัน<br>
+                _blank - เปิดหน้าใหม่<br>
+                _parent - Opens the document in the parent frame<br>
+                _top - Opens the document in the full body of the window<br></p>
+                เช่น &lt;a href="https://www.w3schools.com/" target="_blank"&gt;Visit W3Schools!&lt;/a&gt;
+              <h3>Absolute URLs vs. Relative URLs</h3>
+                <p>Absolute URLs คือเว็บภายนอก<br>
+                Relative URLs คือเว็บภายในเว็บไซต์เดียวกับที่เราอยู่</p>
+              <h3>เราสามารถใช้ภาพในการคลิ้กลิงค์ได้</h3>
+              <p>&lt;a href="default.asp"&gt; กำหนดลิงค์<br> 
+                &lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"&gt;เลือกไฟล์ภาพมาใช้<br> 
+                &lt;/a&gt;</p> 
+              <h3>เราสามารถใช้ email ในการเป็น address ได้</h3>
+              &lt;a href="mailto:someone@example.com"&gt;Send email&lt;/a&gt;
+              <h3>เราสามารถใช้ ปุ่ม (Button) ในการเป็น address ได้</h3>
+              &lt;button onclick="document.location='default.asp'"&gt;HTML Tutorial&lt;/button&gt;
+              <h3>เราสามารถตั้ง title สำหรับ linkได้</h3>
+              &lt;a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section"&gt;Visit our HTML Tutorial&lt;/a&gt;
+            <hr>
+        </div>
+      </div>
+
         <div class="page">
+          <div class="head">
           <h2 id=html_img>HTML Images</h2>
         </div>
+        <div class="paragraph">
+
+
+
+        </div>
+      </div>
+
+
     </div>
   </body>
 
