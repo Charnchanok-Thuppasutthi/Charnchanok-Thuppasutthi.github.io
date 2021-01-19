@@ -12,14 +12,74 @@
     </head>
     <body>
         <div class="language">
-            <a href="index.html" target="_blank">Html</a><br>
-            <a href="javascript.html" target="_blank">Java language</a>
+            <a href="index.html" target="_self">Html</a><br>
+            <a href="javascript.html" target="_self">Java language</a>
         </div>
         <div class="list_container">
             <p class="contents_title">เนื้อหา</p>
             <div class="list">
-                <a href="#js">JS Home</a><br>
+                <a href="#Intro">JS Introduction</a><br>
+                <a href="#Where2">JS Where To</a>
             </div>
+          </div>
+        
+          <div class="content">
+                <div class="page">
+                    <div class="head">
+                        <h2 id=Intro>Introduction to JavaScript</h2>
+                    </div>
+                    <div class="paragraph">
+                        <p>JavaScript เป็นภาษาที่ได้รับความนิยมมากที่สุดในโลกเป็นภาษาที่ใช้สำหรับการเขียนเว็บไซต์
+                        โดยในการเขียนเว็บไซต์จะประกอบไปด้วย 3 องค์ประกอบหลักๆคือ<br> 
+                        1.HTML ไว้สำหรับเนื้อหาของเว็บไซต์<br>
+                        2.Css  ไว้สำหรับการตกแต่งหน้าเว็บไซต์<br>
+                        3.JavaScript ไว้สำหรับควบคุมการกระทำของเว็บไซต์<br>
+                        </p>
+                        <h3>JavaScript สามารถเปลี่ยนแปลงเนื้อหาของ Html ได้</h3>
+                            <p>ยกตัวอย่างเช่น method ที่มีชื่อว่า  getElementById()<br>
+                            โดยการทำนคือจะแสดงสิ่งที่อยู๋ใน parameter(id) หากมีการกดปุ่มจะเปลี่ยนข้อมูลที่แสดงเป็นภายในแทน <br>
+                            &lt;p id="demo"&gt;JavaScript can change HTML content.&lt;/p&gt;<br>
+                            &lt;button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'<br>
+                            &gt;Click Me!&lt;/button&gt;
+                            </p>  
+                        <div class="method_display">
+                            <p id="demo1">JavaScript can change HTML content.</p>
+                            <button type="button" onclick='document.getElementById("demo1").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+                        </div>  
+                        <h3>javascript รองรับทั้ง Double Quote และ Single Quote </h3>
+                            <p>จากตัวอย่างข้างบน สามารถเขียนแบบนีไ้ด้ <br>
+                                document.getElementById('demo').innerHTML = 'Hello JavaScript';
+                            </p>
+                        <h3>สามารถเปลี่ยน Attribute ของ Html ได้</h3>
+                        <p>โดยใช้ getElementById()เชื่อมกับการคลิ้กปุ่ม </p>
+                        <div class="method_display">
+                            <button onclick="document.getElementById('myImage').src='img/left.jpg'">Turn Left</button>
+                            <img id="myImage" src="img/left.jpg" style="width:100px">
+                            <button onclick="document.getElementById('myImage').src='img/right.jpg'">Turn Right</button>
+                        </div>
+                        <h3>สามารถใช้ JavaScript ในการแก้ไข Css ได้</h3>
+                            <p>ใช้ .style.fontSize='...' ในการแก้ไข </p>
+                            <div class="method_display">
+                                <p id="demo2">JavaScript can change the style of an HTML element.</p>
+                                <button type="button" onclick="document.getElementById('demo2').style.fontSize='10px'">Click Me!</button>
+                            </div>
+                        <h3>สามารถใช้ JavaScript ในการซ่อน Html และแสดงได้</h3>
+                            <p>โดยการใช้ .style.display='none' เพื่อล่องหน .style.display='block'เพื่อแสดง</p>
+                            <div class="method_display">
+                                <p id="demo3">I've got magic.</p>
+                                <button type="button" onclick="document.getElementById('demo3').style.display='none'">Disappear</button>
+                                <button type="button" onclick="document.getElementById('demo3').style.display='block'">Appear</button>
+                            </div>       
+                    </div>
+                </div>
+                <div class="page">
+                    <div class="head">
+                        <h2 id=Where2>JavaScript Where To</h2>
+                    </div>
+                    <div class="paragraph">
+
+                    </div>
+                </div>
           </div>
 
 
@@ -32,3 +92,4 @@
 
     </body>
 </html>
+ 
