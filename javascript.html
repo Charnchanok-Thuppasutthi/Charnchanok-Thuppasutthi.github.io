@@ -23,30 +23,31 @@
                 <a href="#js_output">JS Output</a><br>
                 <a href="#js_statement">JS Statment</a><br>
                 <a href="#js_syntax">JS Sytnax</a><br>
+                <a href="#">JS </a><br>
             </div>
-          </div>
+        </div>
         
-          <div class="content">
-                <div class="page">
-                    <div class="head">
-                        <h2 id=js_Intro>Introduction to JavaScript</h2>
-                    </div>
-                    <div class="paragraph">
-                        <p>JavaScript เป็นภาษาที่ได้รับความนิยมมากที่สุดในโลกเป็นภาษาที่ใช้สำหรับการเขียนเว็บไซต์
-                        โดยในการเขียนเว็บไซต์จะประกอบไปด้วย 3 องค์ประกอบหลักๆคือ<br> 
-                        1.HTML ไว้สำหรับเนื้อหาของเว็บไซต์<br>
-                        2.Css  ไว้สำหรับการตกแต่งหน้าเว็บไซต์<br>
-                        3.JavaScript ไว้สำหรับควบคุมการกระทำของเว็บไซต์<br>
-                        </p>
-                        <h3>JavaScript สามารถเปลี่ยนแปลงเนื้อหาของ Html ได้</h3>
-                            <p>ยกตัวอย่างเช่น method ที่มีชื่อว่า  getElementById()<br>
-                            โดยการทำนคือจะแสดงสิ่งที่อยู๋ใน parameter(id) หากมีการกดปุ่มจะเปลี่ยนข้อมูลที่แสดงเป็นภายในแทน <br>
-                            <pre>
-                                &lt;p id="demo"&gt;JavaScript can change HTML content.&lt;/p&gt;<br>
-                                &lt;button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'&gt;<br>
-                                Click Me!
-                                &lt;/button&gt;
-                            </pre>
+        <div class="content">
+            <div class="page">
+                <div class="head">
+                    <h2 id=js_Intro>Introduction to JavaScript</h2>
+                </div>
+                <div class="paragraph">
+                    <p>JavaScript เป็นภาษาที่ได้รับความนิยมมากที่สุดในโลกเป็นภาษาที่ใช้สำหรับการเขียนเว็บไซต์
+                    โดยในการเขียนเว็บไซต์จะประกอบไปด้วย 3 องค์ประกอบหลักๆคือ<br> 
+                    1.HTML ไว้สำหรับเนื้อหาของเว็บไซต์<br>
+                    2.Css  ไว้สำหรับการตกแต่งหน้าเว็บไซต์<br>
+                    3.JavaScript ไว้สำหรับควบคุมการกระทำของเว็บไซต์<br>
+                    </p>
+                    <h3>JavaScript สามารถเปลี่ยนแปลงเนื้อหาของ Html ได้</h3>
+                        <p>ยกตัวอย่างเช่น method ที่มีชื่อว่า  getElementById()<br>
+                        โดยการทำนคือจะแสดงสิ่งที่อยู๋ใน parameter(id) หากมีการกดปุ่มจะเปลี่ยนข้อมูลที่แสดงเป็นภายในแทน <br>
+                        <pre>
+                            &lt;p id="demo"&gt;JavaScript can change HTML content.&lt;/p&gt;<br>
+                            &lt;button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'&gt;<br>
+                            Click Me!
+                            &lt;/button&gt;
+                        </pre>
                             
                             </p>  
                         <div class="method_display">
@@ -77,220 +78,296 @@
                                 <button type="button" onclick="document.getElementById('demo3').style.display='none'">Disappear</button>
                                 <button type="button" onclick="document.getElementById('demo3').style.display='block'">Appear</button>
                             </div>       
-                    </div>
                 </div>
-                <div class="page">
-                    <div class="head">
-                        <h2 id=js_Where2>JavaScript Where To</h2>
-                    </div>
-                    <div class="paragraph">
-                        <p>เราจะเขียนJava Script ให้อยู่ใน tag &lt;script&gt;......&lt;/script&gt; </p>
-                        <h3>Function and Event</h3>
-                        <p>ใน javascript เราจะเขียนไว้ใน Function tag &lt;script&gt; และใช้งานโดยใช้คำว่า 'Called'<br>
-                        และเมื่อเรา called function แล้วเราจะเรียกเหตุการณ์ที่เกิดว่า Event  
-                        </p>
-                        <h3>เราสามารถสร้างไฟล์ script ได้ทั้ง head และ  body</h3>
-                        <p>โดยถ้าหากเราวาง script ไว้ส่วนล่างของ body หรือก็คือไว้ข้างล่าง<br>
-                        จะช่วยเพิ่มความเร็วในการแสดงผลของ browserได้เพราะว่า script ใช้เวลาในการอ่านนาน</p>
-                        ตัวอย่างการกำหนดฟังก์ชั่น
-                        <pre>
-                        &lt;head&gt;<br>
+            </div>
+            <div class="page">
+                <div class="head">
+                    <h2 id=js_Where2>JavaScript Where To</h2>
+                </div>
+                <div class="paragraph">
+                    <p>เราจะเขียนJava Script ให้อยู่ใน tag &lt;script&gt;......&lt;/script&gt; </p>
+                    <h3>Function and Event</h3>
+                    <p>ใน javascript เราจะเขียนไว้ใน Function tag &lt;script&gt; และใช้งานโดยใช้คำว่า 'Called'<br>
+                    และเมื่อเรา called function แล้วเราจะเรียกเหตุการณ์ที่เกิดว่า Event  
+                    </p>
+                    <h3>เราสามารถสร้างไฟล์ script ได้ทั้ง head และ  body</h3>
+                    <p>โดยถ้าหากเราวาง script ไว้ส่วนล่างของ body หรือก็คือไว้ข้างล่าง<br>
+                    จะช่วยเพิ่มความเร็วในการแสดงผลของ browserได้เพราะว่า script ใช้เวลาในการอ่านนาน</p>
+                    ตัวอย่างการกำหนดฟังก์ชั่น
+                    <pre>
+                    &lt;head&gt;<br>
+                        &lt;script&gt;<br>
+                            function myF    unction() {<br>
+                                document.getElementById("demo").innerHTML = "Paragraph changed.";<br>
+                            }<br>
+                        &lt;/script&gt;<br>
+                    &lt;/head&gt;<br>
+                    </pre>
+                    <pre>
+                        &lt;body&gt;<br>
                             &lt;script&gt;<br>
-                                function myF    unction() {<br>
+                                function myFunction() {<br>
                                     document.getElementById("demo").innerHTML = "Paragraph changed.";<br>
                                 }<br>
                             &lt;/script&gt;<br>
-                        &lt;/head&gt;<br>
-                        </pre>
+                        &lt;/body&gt;<br>
+                        </pre>          
+                    <h3>External JavaScript</h3>  
+                        <p>เราสามารถนำไฟล์ JavaScriptเข้ามาใช้ได้<br>
+                        โดยไฟล์จะนามสกุล .js
+                        โดยเขียนได้ดังนี้<br>
                         <pre>
-                            &lt;body&gt;<br>
-                                &lt;script&gt;<br>
-                                    function myFunction() {<br>
-                                        document.getElementById("demo").innerHTML = "Paragraph changed.";<br>
-                                    }<br>
-                                &lt;/script&gt;<br>
-                            &lt;/body&gt;<br>
-                            </pre>          
-                        <h3>External JavaScript</h3>  
-                            <p>เราสามารถนำไฟล์ JavaScriptเข้ามาใช้ได้<br>
-                            โดยไฟล์จะนามสกุล .js
-                            โดยเขียนได้ดังนี้<br>
-                            <pre>
-                                &lt;script src="myScript.js"&gt;&lt;/script&gt;;
-                            </pre>
-                            โดยการเขียน .js จะไม่จำเป็นต้องมีการทำ tag &lt;script&gt;......&lt;/script&gt;<br>
-                            ข้อดีของการนำไฟล์ .js ไว้ภายนอก Html<br>
-                            1.ทำให้ HTML กับ Code js แยกกันดูง่าย<br>
-                            2.ทำให้ HTML และ  javascript อ่านง่าน<br>
-                            3.Cached JavaScript files ช่วยให้โหลดหน้า เว็บเร็วขึ้น
-                            </p>
-                        <h3>เราสามารถนำ script จากภายนอกมาใช้ได้</h3>
-                        <p>External Script ไม่ได้จำกัดที่ว่าต้องมาจากไฟล์ภายในเครื่อง<br>
-                        สามารถมาจากเว็บไซต์อื่นก็ได้ เช่น<br>
-                        <pre>   &lt;script src="https://www.w3schools.com/js/myScript1.js"&gt;&lt;/script&gt;&lt;/p&gt; <br></pre>    
-                        มาจากไฟล์ใน folder อื่น เช่น<br>
-                        <pre>   &lt;script src="/js/myScript1.js"&gt;&lt;/script&gt;&lt;/p&gt;<br></pre>
-                        มาจากไฟล์อื่น เช่น<br>
-                        <pre>   &lt;script src="myScript1.js"&gt;&lt;/script&gt;&lt;/p&gt;</pre> 
-                    </div>
-                </div>
-                <div class="page">
-                    <div class="head">
-                        <h2 id=js_output>JavaScript Output</h2>
-                    </div>
-                    <div class="paragraph">
-                        <p>
-                            JavaScript สามารถแสดงผลออกมาได้ในหลายทาง<br>
-                            เขียนใน HTML element เราจะใช้ innerHTML.<br>
-                            เขียนใน the HTML output เราจะใช้ document.write().<br>
-                            เขียนใน an alert box, เราจะใช้ window.alert().<br>
-                            เขียนใน the browser console, เราจะใช้ console.log().<br>
+                            &lt;script src="myScript.js"&gt;&lt;/script&gt;;
+                        </pre>
+                        โดยการเขียน .js จะไม่จำเป็นต้องมีการทำ tag &lt;script&gt;......&lt;/script&gt;<br>
+                        ข้อดีของการนำไฟล์ .js ไว้ภายนอก Html<br>
+                        1.ทำให้ HTML กับ Code js แยกกันดูง่าย<br>
+                        2.ทำให้ HTML และ  javascript อ่านง่าน<br>
+                        3.Cached JavaScript files ช่วยให้โหลดหน้า เว็บเร็วขึ้น
                         </p>
-                        <h3>การใช้ innerHTML.</h3>
-                            <p>เราจะใช้ document.getElementById(id)  โดยที่ id เป็น attribute ไว้กำหนด Html element<br>
-                                โดยการเปลี่ยน
-                            </p>
-                            <pre>
-                                &lt;p id="demo"&gt;&lt;/p&gt;
-                                &lt;script&gt;
-                                document.getElementById("demo").innerHTML = 5 + 6;
-                                &lt;/script&gt;
-                            </pre>
-                            <div class="method_display">
-                            <pre>
-                                <p id="demo" style="padding-left: 20%;"></p>
-                                <script>
-                                document.getElementById("demo").innerHTML = 5 + 6;
-                                </script>
-                            </pre>
-                            </div>
-                        <h3>การใช้ document.write()</h3>
-                            <pre>
-                                &lt;body&gt;
-                                    &lt;script&gt;
-                                    document.write(5 + 6);
-                                    &lt;/script&gt;
-                                &lt;/body&gt;                        
-                            </pre> 
-                            <div class="method_display">
-                                <pre>
-                                <script>
-                                    document.write(5 + 6);
-                                </script>
-                                </pre>    
-                            </div>
-                            <p>ถ้าหากเราใช้ document.write() หลัง Html tag คือไม่ได้อยู่ใน script มันจะทำการลบ Html ที่จะแสดงเหล่านั้นไป </p>
-                            <pre>
-                                &lt;body&gt;
-
-                                    &lt;h1&gt;My First Web Page&lt;/1&gt;
-                                    &lt;p&gt;My first paragraph.&lt;/p&gt;
-                                    &lt;button type="button" onclick="document.write(5 + 6)"&gt;Try it&lt;/button&gt;
-                                &lt;/body&gt;   
-                            </pre>
-                        <h3>การใช้ window.alert()</h3>    
-                            <p>จะเป็นการการแจ้งเตือนเป็น alert box ของ browser</p>
-                            <pre>
-                                &lt;script&gt;
-                                    window.alert(5 + 6);
-                                &lt;/script&gt;
-                            </pre>
-                            <p>หรือเราสามารถเขียน โดนไม่ต้องมี window ได้ผลลัพธืจะเป็นดังนี้</p>
-                            <pre>
-                                &lt;script&gt;
-                                    alert(5 + 6);
-                                &lt;/script&gt;
-                            </pre>
-                        <h3>การใช้ console.log()</h3>
-                            <p>คำสั่งนี้จะไม่แสดงบนจอ Html แต่จะแสดงได้เมื่อเกิดการ debug บน console หรือก็คือ กดf12 
-                                บนbrowser เลือกช่อง consoleและทำการ run html อีกรอบ</p>
-                            <pre>
-                                &lt;script&gt;
-                                    console.log(5 + 6);
-                                &lt;/script&gt;
-                            </pre>
-                        <h3>การใช้ Print</h3>
-                            <p>ไว้ใช้สำหรับเรียก print สิ่งนั้นโดยใช้คำสั่ง window.print()</p>
-                            <pre>
-                                &lt;body&gt;
-                                    &lt;button onclick="window.print()"&gt;Print this page&lt;/button>&gt;
-                                &lt;/body&gt;
-                            </pre>
-                    </div>
-                    <div class="page">
-                        <div class="head">
-                            <h2 id=js_statement>JavaScript Statement</h2>
-                        </div>
-                        <div class="paragraph">
-                            <p>statement คือประโยคที่มีการกำหนดค่าเช่น</p>
-                                <pre>
-                                    var x, y, z;    // Statement 1
-                                    x = 5;          // Statement 2
-                                    y = 6;          // Statement 3
-                                    z = x + y;      // Statement 4
-                                </pre>
-                                <p>แสดงวาส JavaScript Statement ก็จะมีการกำหนดค่าเหมือนกัน    </p>
-                                <pre>
-                                    document.getElementById("demo").innerHTML = "Hello Dolly.";
-                                </pre>
-                            <h3>Semicolons (;)</h3>
-                                <p>Semicolons นั้นจะใช้เพื่อกำหนดว่านี่คือจุดหยุดของ statment นี้เช่น </p>
-                                    <pre>
-                                        var a, b, c;     // Declare 3 variables
-                                        a = 5;           // Assign the value 5 to a
-                                        b = 6;           // Assign the value 6 to b
-                                        c = a + b;       // Assign the sum of a and b to c
-                                    </pre>
-                                <p>เราสามารถเขียนในบรรทัดเดียวกันได้เลย</p>
-                                    <pre>
-                                        a = 5; b = 6; c = a + b;
-                                    </pre>
-                            <h3>White space</h3>
-                                <p>JavaScriptไม่ได้ sensitive ในการเว้นวรรคระหว่างการพิมพ์ แต่การเว้นวรรคทุกค่าจะช่วยให้อ่านง่านขึ้นเช่น</p>
-                                <pre>
-                                    var person = "Hege";
-                                    var person="Hege";
-                                    var x = y + z;
-                                </pre>
-                            <h3>Line Length and Line Breaks</h3>
-                                <p>เช่นกันการขึ้นบรรทัดใหม่ทั้งที่ไม่ได้มี semicolons นั้น JavaScriptจะอ่านไปเรื่อยๆจนกว่าจะเจอ semicolons</p>
-                                    <pre>
-                                        document.getElementById("demo").innerHTML =
-                                        "Hello Dolly!";
-                                        document.getElementById("demo").innerHTML ="Hello Dolly!";
-                                    </pre>
-                            <h3>Code Blocks</h3>
-                                <p>ในการเขียนฟังก์ชั่นทุกจะมีรูปแบบคือ funtion={........} ทุกอย่างที่อยู๋ใน {.....} 
-                                    จะอยู่ในการทำงานของ function นี้ เช่น
-                                </p>
-                                <pre>
-                                    function myFunction() {
-                                        document.getElementById("demo1").innerHTML = "Hello Dolly!";
-                                        document.getElementById("demo2").innerHTML = "How are you?";
-                                      }
-                                </pre>
-                        </div>
+                    <h3>เราสามารถนำ script จากภายนอกมาใช้ได้</h3>
+                    <p>External Script ไม่ได้จำกัดที่ว่าต้องมาจากไฟล์ภายในเครื่อง<br>
+                    สามารถมาจากเว็บไซต์อื่นก็ได้ เช่น<br>
+                    <pre>   &lt;script src="https://www.w3schools.com/js/myScript1.js"&gt;&lt;/script&gt;&lt;/p&gt; <br></pre>    
+                    มาจากไฟล์ใน folder อื่น เช่น<br>
+                    <pre>   &lt;script src="/js/myScript1.js"&gt;&lt;/script&gt;&lt;/p&gt;<br></pre>
+                    มาจากไฟล์อื่น เช่น<br>
+                    <pre>   &lt;script src="myScript1.js"&gt;&lt;/script&gt;&lt;/p&gt;</pre> 
                 </div>
-                <div class="page">
-                    <div class="head">
-                        <h2 id=js_syntax>JavaScript Syntax</h2>
-                    </div>
-                    <div class="paragraph">
-
-                    </div>
+            </div>
+            <div class="page">
+                <div class="head">
+                    <h2 id=js_output>JavaScript Output</h2>
                 </div>
+                <div class="paragraph">
+                    <p>
+                        JavaScript สามารถแสดงผลออกมาได้ในหลายทาง<br>
+                        เขียนใน HTML element เราจะใช้ innerHTML.<br>
+                        เขียนใน the HTML output เราจะใช้ document.write().<br>
+                        เขียนใน an alert box, เราจะใช้ window.alert().<br>
+                        เขียนใน the browser console, เราจะใช้ console.log().<br>
+                    </p>
+                    <h3>การใช้ innerHTML.</h3>
+                        <p>เราจะใช้ document.getElementById(id)  โดยที่ id เป็น attribute ไว้กำหนด Html element<br>
+                            โดยการเปลี่ยน
+                        </p>
+                        <pre>
+                            &lt;p id="demo"&gt;&lt;/p&gt;
+                            &lt;script&gt;
+                            document.getElementById("demo").innerHTML = 5 + 6;
+                            &lt;/script&gt;
+                        </pre>
+                        <div class="method_display">
+                        <pre>
+                            <p id="demo" style="padding-left: 20%;"></p>
+                            <script>
+                            document.getElementById("demo").innerHTML = 5 + 6;
+                            </script>
+                        </pre>
+                        </div>
+                    <h3>การใช้ document.write()</h3>
+                        <pre>
+                            &lt;body&gt;
+                                &lt;script&gt;
+                                document.write(5 + 6);
+                                &lt;/script&gt;
+                            &lt;/body&gt;                        
+                        </pre> 
+                        <div class="method_display">
+                            <pre>
+                            <script>
+                                document.write(5 + 6);
+                            </script>
+                            </pre>    
+                        </div>
+                        <p>ถ้าหากเราใช้ document.write() หลัง Html tag คือไม่ได้อยู่ใน script มันจะทำการลบ Html ที่จะแสดงเหล่านั้นไป </p>
+                        <pre>
+                            &lt;body&gt;
+                                &lt;h1&gt;My First Web Page&lt;/1&gt;
+                                &lt;p&gt;My first paragraph.&lt;/p&gt;
+                                &lt;button type="button" onclick="document.write(5 + 6)"&gt;Try it&lt;/button&gt;
+                            &lt;/body&gt;   
+                        </pre>
+                    <h3>การใช้ window.alert()</h3>    
+                        <p>จะเป็นการการแจ้งเตือนเป็น alert box ของ browser</p>
+                        <pre>
+                            &lt;script&gt;
+                                window.alert(5 + 6);
+                            &lt;/script&gt;
+                        </pre>
+                        <p>หรือเราสามารถเขียน โดนไม่ต้องมี window ได้ผลลัพธืจะเป็นดังนี้</p>
+                        <pre>
+                            &lt;script&gt;
+                                alert(5 + 6);
+                            &lt;/script&gt;
+                        </pre>
+                    <h3>การใช้ console.log()</h3>
+                        <p>คำสั่งนี้จะไม่แสดงบนจอ Html แต่จะแสดงได้เมื่อเกิดการ debug บน console หรือก็คือ กดf12 
+                            บนbrowser เลือกช่อง consoleและทำการ run html อีกรอบ</p>
+                        <pre>
+                            &lt;script&gt;
+                                console.log(5 + 6);
+                            &lt;/script&gt;
+                        </pre>
+                    <h3>การใช้ Print</h3>
+                        <p>ไว้ใช้สำหรับเรียก print สิ่งนั้นโดยใช้คำสั่ง window.print()</p>
+                        <pre>
+                            &lt;body&gt;
+                                &lt;button onclick="window.print()"&gt;Print this page&lt;/button>&gt;
+                            &lt;/body&gt;
+                        </pre>
+                </div>
+            </div>
+            <div class="page">
+                <div class="head">
+                     <h2 id=js_statement>JavaScript Statement</h2>
+                </div>
+                <div class="paragraph">
+                    <p>statement คือประโยคที่มีการกำหนดค่าเช่น</p>
+                        <pre>
+                            var x, y, z;    // Statement 1
+                            x = 5;          // Statement 2
+                            y = 6;          // Statement 3
+                            z = x + y;      // Statement 4
+                        </pre>
+                        <p>แสดงวาส JavaScript Statement ก็จะมีการกำหนดค่าเหมือนกัน    </p>
+                        <pre>
+                            document.getElementById("demo").innerHTML = "Hello Dolly.";
+                        </pre>
+                    <h3>Semicolons (;)</h3>
+                        <p>Semicolons นั้นจะใช้เพื่อกำหนดว่านี่คือจุดหยุดของ statment นี้เช่น </p>
+                            <pre>
+                                var a, b, c;     // Declare 3 variables
+                                a = 5;           // Assign the value 5 to a
+                                b = 6;           // Assign the value 6 to b
+                                c = a + b;       // Assign the sum of a and b to c
+                            </pre>
+                        <p>เราสามารถเขียนในบรรทัดเดียวกันได้เลย</p>
+                            <pre>
+                                a = 5; b = 6; c = a + b;
+                            </pre>
+                    <h3>White space</h3>
+                        <p>JavaScriptไม่ได้ sensitive ในการเว้นวรรคระหว่างการพิมพ์ แต่การเว้นวรรคทุกค่าจะช่วยให้อ่านง่านขึ้นเช่น</p>
+                        <pre>
+                            var person = "Hege";
+                            var person="Hege";
+                            var x = y + z;
+                        </pre>
+                    <h3>Line Length and Line Breaks</h3>
+                        <p>เช่นกันการขึ้นบรรทัดใหม่ทั้งที่ไม่ได้มี semicolons นั้น JavaScriptจะอ่านไปเรื่อยๆจนกว่าจะเจอ semicolons</p>
+                            <pre>
+                                document.getElementById("demo").innerHTML =
+                                "Hello Dolly!";
+                                document.getElementById("demo").innerHTML ="Hello Dolly!";
+                            </pre>
+                    <h3>Code Blocks</h3>
+                        <p>ในการเขียนฟังก์ชั่นทุกจะมีรูปแบบคือ funtion={........} ทุกอย่างที่อยู๋ใน {.....} 
+                            จะอยู่ในการทำงานของ function นี้ เช่น
+                        </p>
+                        <pre>
+                            function myFunction() {
+                                document.getElementById("demo1").innerHTML = "Hello Dolly!";
+                                document.getElementById("demo2").innerHTML = "How are you?";
+                              }
+                        </pre>
+                </div>
+            </div>
+            <div class="page">
+                <div class="head">
+                    <h2 id=js_syntax>JavaScript Syntax</h2>
+                </div>
+                <div class="paragraph">
+                        <p>Syntax หรือ โครงสร้างของ JavaScript นั้นเป็นดังตัวอย่าง</p>
+                        <pre>
+                            var x, y, z;       // Declare Variables
+                            x = 5; y = 6;      // Assign Values
+                            z = x + y;         // Compute Values
+                        </pre>
+                        <p>โดยประเภทของ Value จะแบ่งออกเป็น 2 ชนิดคือ<br>
+                            1.ตัวแปรกำหนดค่าแล้ว (Fixed values) เราเรียกตัวแปรเหล่านี้ว่า Literals <br>
+                            2.ตัวแปรยังไม่กำหนดค่า (Variable values) เราเรียกตัวแปรเหล่านี้ว่า Variables <br>
+                        </p>
+                    <h3>Literals ที่สามารถเห็นได้ชัดเจนคือ</h3>
+                        <p>
+                            1.ตัวเลขที่ถูกเขียนขึ้นมาโดดๆ<br>
+                            2.ข้อความที่ถูกเขียน และครอบด้วย Single quote หรือ Double quote
+                        </p>
+                        <pre>
+                            10.50
+                            1001
+                            "John Doe"
+                            'John Doe'
+                        </pre>
+                    <h3>Variables</h3>
+                        <p>ทางโปรแกรมมิ่งนั้น Variables มีไว้สำหรับในการเก็บค่าโดยจะต้องเกิดการประกาศชื่อVariablesก่อนแล้วเก็บ<br>
+                            โดยใน javascript นั้นจะใช้คำสั่ง "var ชื่อVariables" ในการประกาศตัวแปร <br>
+                            และเครื่องหมาย "เท่ากับ"นั้นมีไว้สำหรับ เก็บข้อมูลเข้า Variables<br>
+                            ดังตัวอย่าง
+                        </p>
+                        <pre>
+                            var x;
+                            x = 6;
+                        </pre>
+                    <h3>Operators ตัวดำเนินการ</h3>
+                        <p>
+                            จำพวกตัวดำเนินการคณิตศาสตร์(arithmetic operators ) เช่น + - * / และ ( )วงเล็บ สำหรับกำหนดความสำคัญ เช่น
+                        </p>
+                        <pre>
+                            (5 + 6) * 10
+                        </pre>
+                        <p>
+                            และเครื่องหมาย "เท่ากับ" ก็เป็น operator เช่นกันแต่เป็นจำพวก (assignment operator) คือไว้สำหรับเก็บค่าข้อมูลเช่น
+                        </p>
+                        <pre>
+                            var x, y;
+                            x = 5;
+                            y = 6;
+                        </pre>
+                    <h3>Expressions</h3>
+                        <p>คือการดำเนินการของ value จาก operation ที่เขียนไว้ใน statement ก่อนหน้านี้แล้ว เช่น</p>
+                        <pre>
+                            5 * 10 ค่าที่จะแสดงคือ50
+                            x * 10 สามารถใช้ตัวแปรที่กำหนดมาแล้วมาใช้งานได้
+                            "John" + " " + "Doe" หรือการนำตัวอักษรมาต่อกัน
+                        </pre>
+                    <h3>keyword การตั้งสมการมากกว่า  2 ตัวแปร</h3>
+                        <p>เราสามารถประกาศตัวแปรได้มากกว่า 1 ตัว และใช้ในการคำนวณได้มากกว่า 1 ตัวเช่น</p>
+                        <pre>
+                            var x, y;
+                            x = 5 + 6;
+                            y = x * 10;
+                        </pre>
+                    <h3>การ comment</h3>
+                        <p>ใช้เพื่อให้ผู้เขียนคนต่อๆไปหรือตัวเองเมื่อกลับมาอ่านภายหลัง สามารถเข้าใจได้ <br>
+                        โดย syntax เป็นดังนี้  
+                        //...... <br>
+                        /* ...... */ <br>
+                        โดยโค้ดหลังจาก comment เหล่านี้จนจบนั้นจะไม่เกิดการอ่านจาก computer  เช่น</p>
+                        <pre>
+                            var x = 5;   // I will be executed
+                            // var x = 6;   I will NOT be executed
+                        </pre>
+                    <h3>JavaScript is Case Sensitive</h3>
+                        <p>JavaScript การตั้งชื่อจะซ้ำแต่ถ้าหากเป็นตัวใหญ่ และตัวเล็ก ภาษาจะคิดว่าเป็นคนละ</p>
+                        <pre>
+                            var lastname, lastName;
+                            lastName = "Doe";
+                            lastname = "Peterson";
+                        </pre>
+                </div>
+            </div>
+            <div class="page">
+                <div class="head">
+                        <h2 id="">JavaScript </h2>
+                </div>
+                <div class="paragraph">
+                       
+                </div>
+            </div>
+               
 
-
-          </div>
-
-
-
-
-
-
-
-
-
+            
+        </div>
     </body>
 </html>
  

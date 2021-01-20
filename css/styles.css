@@ -15,8 +15,9 @@ p {
   
   }
 .language{
-  right: 10px;
+  left: 10px;
   position:fixed;
+  top: 10px;
 } 
 .list_container{
   position:fixed;
