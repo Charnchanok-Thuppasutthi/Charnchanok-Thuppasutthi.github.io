@@ -23,7 +23,7 @@
                 <a href="#js_output">JS Output</a><br>
                 <a href="#js_statement">JS Statment</a><br>
                 <a href="#js_syntax">JS Sytnax</a><br>
-                <a href="#">JS </a><br>
+                <a href="#js_comment">JS Comment </a><br>
             </div>
         </div>
         
@@ -358,10 +358,41 @@
             </div>
             <div class="page">
                 <div class="head">
-                        <h2 id="">JavaScript </h2>
+                        <h2 id="js_comment">JavaScript Comment</h2>
                 </div>
                 <div class="paragraph">
-                       
+                    <p>การ comment อย่างที่กล่าวไว้ก่อนหน้านี้มีไว้สำหรับให้ผู้เขียนคนต่อๆไปหรือตัวเอง
+                        เมื่อกลับมาอ่านภายหลัง สามารถเข้าใจไดโดยการอธิบาย <br>
+                        และยังสามารถไว้ใช้สำหรับการทดสอบโค้ด 
+                    </p>
+                    <p>โดยการ comment นั้นมี 2 แบบ <br>
+                    1.Single line (บรรทัดเดียว)<br>
+                    2.Multi-line (หลายบรรทัด)
+                    </p>
+                    <h3>Single line</h3>
+                        <p>โดย บรรทัดเดียวนั้นเราจะใช้ // โค้ด...........</p>
+                            <pre>
+                                // Change heading:
+                                document.getElementById("myH").innerHTML = "My First Page";
+
+                                // Change paragraph:
+                                document.getElementById("myP").innerHTML = "My first paragraph.";
+
+                                var x = 5;      // Declare x, give it the value of 5
+                                var y = x + 2;  // Declare y, give it the value of x + 2
+                            </pre>
+                    <h3>Multi-line</h3>
+                        <p>หลายบรรทัดนั้นจะใช้ /* โค้ด........*/ </p>
+                            <pre>
+                                /*
+                                The code below will change
+                                the heading with id = "myH"
+                                and the paragraph with id = "myP"
+                                in my web page:
+                                */
+                                document.getElementById("myH").innerHTML = "My First Page";
+                                document.getElementById("myP").innerHTML = "My first paragraph.";
+                            </pre>
                 </div>
             </div>
                
