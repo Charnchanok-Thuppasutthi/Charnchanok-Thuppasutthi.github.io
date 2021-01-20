@@ -20,8 +20,8 @@
             <div class="list">
                 <a href="#js_Intro">JS Introduction</a><br>
                 <a href="#js_Where2">JS Where To</a><br>
-                <a href="#js_output">JS Output</a>
-
+                <a href="#js_output">JS Output</a><br>
+                <a href="#js_statement">JS Statment</a><br>
             </div>
           </div>
         
@@ -42,7 +42,7 @@
                             โดยการทำนคือจะแสดงสิ่งที่อยู๋ใน parameter(id) หากมีการกดปุ่มจะเปลี่ยนข้อมูลที่แสดงเป็นภายในแทน <br>
                             <pre>
                                 &lt;p id="demo"&gt;JavaScript can change HTML content.&lt;/p&gt;<br>
-                                &lt;button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'<br>&gt;
+                                &lt;button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'&gt;<br>
                                 Click Me!
                                 &lt;/button&gt;
                             </pre>
@@ -95,7 +95,7 @@
                         <pre>
                         &lt;head&gt;<br>
                             &lt;script&gt;<br>
-                                function myFunction() {<br>
+                                function myF    unction() {<br>
                                     document.getElementById("demo").innerHTML = "Paragraph changed.";<br>
                                 }<br>
                             &lt;/script&gt;<br>
@@ -126,11 +126,11 @@
                         <h3>เราสามารถนำ script จากภายนอกมาใช้ได้</h3>
                         <p>External Script ไม่ได้จำกัดที่ว่าต้องมาจากไฟล์ภายในเครื่อง<br>
                         สามารถมาจากเว็บไซต์อื่นก็ได้ เช่น<br>
-                        <pre>&lt;script src="https://www.w3schools.com/js/myScript1.js"&gt;&lt;/script&gt;&lt;/p&gt; <br></pre>    
+                        <pre>   &lt;script src="https://www.w3schools.com/js/myScript1.js"&gt;&lt;/script&gt;&lt;/p&gt; <br></pre>    
                         มาจากไฟล์ใน folder อื่น เช่น<br>
-                        <pre>&lt;script src="/js/myScript1.js"&gt;&lt;/script&gt;&lt;/p&gt;<br></pre>
+                        <pre>   &lt;script src="/js/myScript1.js"&gt;&lt;/script&gt;&lt;/p&gt;<br></pre>
                         มาจากไฟล์อื่น เช่น<br>
-                        <pre>&lt;script src="myScript1.js"&gt;&lt;/script&gt;&lt;/p&gt;</pre> 
+                        <pre>   &lt;script src="myScript1.js"&gt;&lt;/script&gt;&lt;/p&gt;</pre> 
                     </div>
                 </div>
                 <div class="page">
@@ -138,8 +138,89 @@
                         <h2 id=js_output>JavaScript Output</h2>
                     </div>
                     <div class="paragraph">
+                        <p>
+                            JavaScript สามารถแสดงผลออกมาได้ในหลายทาง<br>
+                            เขียนใน HTML element เราจะใช้ innerHTML.<br>
+                            เขียนใน the HTML output เราจะใช้ document.write().<br>
+                            เขียนใน an alert box, เราจะใช้ window.alert().<br>
+                            เขียนใน the browser console, เราจะใช้ console.log().<br>
+                        </p>
+                        <h3>การใช้ innerHTML.</h3>
+                            <p>เราจะใช้ document.getElementById(id)  โดยที่ id เป็น attribute ไว้กำหนด Html element<br>
+                                โดยการเปลี่ยน
+                            </p>
+                            <pre>
+                                &lt;p id="demo"&gt;&lt;/p&gt;
+                                &lt;script&gt;
+                                document.getElementById("demo").innerHTML = 5 + 6;
+                                &lt;/script&gt;
+                            </pre>
+                            <div class="method_display">
+                            <pre>
+                                <p id="demo" style="padding-left: 20%;"></p>
+                                <script>
+                                document.getElementById("demo").innerHTML = 5 + 6;
+                                </script>
+                            </pre>
+                            </div>
+                        <h3>การใช้ document.write()</h3>
+                            <pre>
+                                &lt;body&gt;
+                                    &lt;script&gt;
+                                    document.write(5 + 6);
+                                    &lt;/script&gt;
+                                &lt;/body&gt;                        
+                            </pre> 
+                            <div class="method_display">
+                                <pre>
+                                <script>
+                                    document.write(5 + 6);
+                                </script>
+                                </pre>    
+                            </div>
+                            <p>ถ้าหากเราใช้ document.write() หลัง Html tag คือไม่ได้อยู่ใน script มันจะทำการลบ Html ที่จะแสดงเหล่านั้นไป </p>
+                            <pre>
+                                &lt;body&gt;
 
+                                    &lt;h1&gt;My First Web Page&lt;/1&gt;
+                                    &lt;p&gt;My first paragraph.&lt;/p&gt;
+                                    &lt;button type="button" onclick="document.write(5 + 6)"&gt;Try it&lt;/button&gt;
+                                &lt;/body&gt;   
+                            </pre>
+                        <h3>การใช้ window.alert()</h3>    
+                            <p>จะเป็นการการแจ้งเตือนเป็น alert box ของ browser</p>
+                            <pre>
+                                &lt;script&gt;
+                                    window.alert(5 + 6);
+                                &lt;/script&gt;
+                            </pre>
+                            <p>หรือเราสามารถเขียน โดนไม่ต้องมี window ได้ผลลัพธืจะเป็นดังนี้</p>
+                            <pre>
+                                &lt;script&gt;
+                                    alert(5 + 6);
+                                &lt;/script&gt;
+                            </pre>
+                        <h3>การใช้ console.log()</h3>
+                            <p>คำสั่งนี้จะไม่แสดงบนจอ Html แต่จะแสดงได้เมื่อเกิดการ debug บน console หรือก็คือ กดf12 
+                                บนbrowser เลือกช่อง consoleและทำการ run html อีกรอบ</p>
+                            <pre>
+                                &lt;script&gt;
+                                    console.log(5 + 6);
+                                &lt;/script&gt;
+                            </pre>
+                        <h3>การใช้ Print</h3>
+                            <p>ไว้ใช้สำหรับเรียก print สิ่งนั้นโดยใช้คำสั่ง window.print()</p>
+                            <pre>
+                                &lt;body&gt;
+                                    &lt;button onclick="window.print()"&gt;Print this page&lt;/button>&gt;
+                                &lt;/body&gt;
+                            </pre>
                     </div>
+                    <div class="page">
+                        <div class="head">
+                            <h2 id=js_statement>JavaScript Statement</h2>
+                        </div>
+
                 </div>
           </div>
 
