@@ -24,6 +24,7 @@
                 <a href="#js_statement">JS Statment</a><br>
                 <a href="#js_syntax">JS Sytnax</a><br>
                 <a href="#js_comment">JS Comment </a><br>
+                <a href="#js_var">JS Variables </a><br>
             </div>
         </div>
         
@@ -395,7 +396,92 @@
                             </pre>
                 </div>
             </div>
-               
+            <div class="page">
+                <div class="head">
+                    <h2 id="js_var">JavaScript Variables</h2>
+                </div>
+                <div class="paragraph">
+                    <p> Variable คือ ตัวเก็บข้อมูลต่างๆ ยกตัวอย่าง x,y และ z เป็น Variable โดยถูกประกาศจาก var</p>
+                    <pre>
+                        var x = 5;
+                        var y = 6;
+                        var z = x + y;
+                    </pre>
+                    <p>หรืออาจจะตั้งให้มีความหมาย หรือ ความยาวกว่านี้ก็ย่อมได้</p>
+                    <pre>
+                        var price1 = 5;
+                        var price2 = 6;
+                        var total = price1 + price2;
+                    </pre>
+                    <h3>Assignment Operator</h3>
+                        <p>เครื่องหมายเท่ากับ "=" ไม่ได้หมายถึงเท่ากับ แบบทางคณิตศาสตร์์แต่เป็นการเท่ากับคือให้ตัวแปรนั้นมีค่า เท่ากับ<br>
+                        ซึ่งหากต้องการการเท่ากับเหมือนในทางคณิตศาสตร์จะต้องใช้เครื่องหมาย "=="</p>
+                        <pre>
+                            x = x + 5
+                        </pre>
+                        <p>บรรทัดข้างบนการทำงานคือ ให้ x ซ้าย มีค่าเท่ากับ x ตัวก่อน บวกกับ 5 <br>
+                        แสดงว่าในการกำหนด statment ผลลัพธ์ต่างๆจะอยู่ทางซ้าย และการทำงานจะอยู่ทางขวา</p>
+                    <h3>ประเภทของข้อมูล</h3>
+                        <p>ค่าที่เราจะเก็บ มีทั้งเลข อักษร ซึ่งเห็นได้ว่ามันต่างกัน<br>
+                        ข้อมูลเมื่อเราเก็บเข้าไปก็มีการแยกประเภทเหมือนกันเพื่อให้สามารถใช้ในการดำเนินการต่อไปได้<br>
+                    โดยการแยกประเภทนั้นจะแยกจาก Quote ตอนใส่ค่าลง Variables</p>
+                    <pre>
+                        var pi = 3.14; ตัวเลขจะไม่มี quote  
+                        var person = "John Doe"; ตัวอักษรจะมีquote ไม่ว่าจะเป็น single quote หรือ double quote
+                        var answer = 'Yes I am!';
+                    </pre>
+                    <h3>วิธีการประกาศ</h3>
+                        <p>ขั้นตอนการประกาศและใส่ค่านั้นเราสามารถทำได้หลายขั้นตอน</p>
+                        <pre>
+                            var carName; ประกาศตัวแปรก่อน
+                            carName = "Volvo"; ใส่ค่าทีหลัง
+                            var carName = "Volvo"; ประกาศและใส่ค่าพร้อมกัน
+                            var person = "John Doe", carName = "Volvo", price = 200; สามารถประกาศได้พร้อมๆกันหลายๆตัวแต่จะมี "," คั้นระหว่างตัวแปร
+                            var person = "John Doe",หรือจะย้ายลงมาบรรทัดใหม่ก็ได้
+                            carName = "Volvo",
+                            price = 200;
+                        </pre>
+                        <p>หากประกาศตัวแปรเปล่าไม่มีการใส่ค่า จะกลายเป็นว่าตัวแปรนั้นเป็นประเภท undefined </p>
+                            <pre>
+                                var carName;
+                            </pre>
+                        <p>เราสามารถทำให้ตัวแปรที่มีค่ากลายเป็นไม่มีค่า(undefined)ได้โดยการประกาศชื่อซ้ำ</p>
+                            <pre>
+                                var carName = "Volvo";
+                                var carName;
+                            </pre>
+                        <p>เราสามารถประกาศตัวแปรโดยค่าเกิดจากการทำ operation กันอยู่ได้</p>
+                            <pre>
+                                var x = 5 + 2 + 3; ได้ทั้ง number
+                                var x = "John" + " " + "Doe"; และ string
+                            </pre>
+                        <p> ถ้าหากทำการ operate โดยมี quote ผลลัพธ์จะเป็นการต่อ string</p>
+                            <pre>
+                                var x = "5" + 2 + 3;
+                                523
+                            </pre>
+                        <p>หากลองสลับตัว operate ผลลัพธ์จะทำการอ่านเจอ numberก่อนและทำการบวกก่อนแล้วมาต่อstring ทีหลัง</p>
+                            <pre>
+                                var x = 2 + 3 + "5";
+                                55
+                            </pre>
+                        <p>แสดงว่า JavaScript จะอ่านจากซ้ายไปขวา </p>
+                    <h3>Dollar Sign $ เครื่องหมาย dollar</h3>
+                       <p>การประกาศตัวแปรที่มี Dollar Sign ใน javascript Professional Programmer จะใช้เพื่อเป็นนามแฝงสำหรับ main function ใน JavaScript library.</p>
+                        <pre>
+                            var $$$ = "Hello World";
+                            var $ = 2;
+                            var $myMoney = 5;
+                        </pre> 
+                    <h3>Underscore (_) </h3>
+                        <p>การประกาศตัวแปรที่มี Underscoreใน javascript Professional Programmer จะใช้เป็นนามแฝงสำหรับ ตัวแปรที่เฉพาะ (private variable,hidden variable)</p>
+                        <pre>
+                            var _lastName = "Johnson";
+                            var _x = 2;
+                            var _100 = 5;
+                        </pre>
+                </div>
+            </div>
 
             
         </div>
