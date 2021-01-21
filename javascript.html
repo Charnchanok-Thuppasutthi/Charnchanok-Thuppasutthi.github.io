@@ -25,6 +25,7 @@
                 <a href="#js_syntax">JS Sytnax</a><br>
                 <a href="#js_comment">JS Comment </a><br>
                 <a href="#js_var">JS Variables </a><br>
+                <a href="#js_oper">JS Operators </a><br>
             </div>
         </div>
         
@@ -98,7 +99,7 @@
                     <pre>
                     &lt;head&gt;<br>
                         &lt;script&gt;<br>
-                            function myF    unction() {<br>
+                            function Function() {<br>
                                 document.getElementById("demo").innerHTML = "Paragraph changed.";<br>
                             }<br>
                         &lt;/script&gt;<br>
@@ -168,11 +169,14 @@
                         </div>
                     <h3>การใช้ document.write()</h3>
                         <pre>
-                            &lt;body&gt;
-                                &lt;script&gt;
-                                document.write(5 + 6);
-                                &lt;/script&gt;
-                            &lt;/body&gt;                        
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                                &lt;body&gt;
+                                    &lt;script&gt;
+                                    document.write(5 + 6);
+                                    &lt;/script&gt;
+                                &lt;/body&gt;
+                            &lt;/html&gt;                         
                         </pre> 
                         <div class="method_display">
                             <pre>
@@ -181,13 +185,18 @@
                             </script>
                             </pre>    
                         </div>
-                        <p>ถ้าหากเราใช้ document.write() หลัง Html tag คือไม่ได้อยู่ใน script มันจะทำการลบ Html ที่จะแสดงเหล่านั้นไป </p>
+                        <p>ถ้าหากเราใช้ document.write() แล้วไม่ได้เขียนใน tag script 
+                            หลังจากที่โหลดหน้า Html ขึ้นมาบน browser
+                            จะลบ html อื่นๆหมดจากหน้านั้น </p>
                         <pre>
-                            &lt;body&gt;
-                                &lt;h1&gt;My First Web Page&lt;/1&gt;
-                                &lt;p&gt;My first paragraph.&lt;/p&gt;
-                                &lt;button type="button" onclick="document.write(5 + 6)"&gt;Try it&lt;/button&gt;
-                            &lt;/body&gt;   
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                                &lt;body&gt;
+                                    &lt;h1&gt;My First Web Page&lt;/1&gt;
+                                    &lt;p&gt;My first paragraph.&lt;/p&gt;
+                                    &lt;button type="button" onclick="document.write(5 + 6)"&gt;Try it&lt;/button&gt;
+                                &lt;/body&gt;  
+                            &lt;/html&gt; 
                         </pre>
                     <h3>การใช้ window.alert()</h3>    
                         <p>จะเป็นการการแจ้งเตือนเป็น alert box ของ browser</p>
@@ -262,7 +271,7 @@
                                 document.getElementById("demo").innerHTML ="Hello Dolly!";
                             </pre>
                     <h3>Code Blocks</h3>
-                        <p>ในการเขียนฟังก์ชั่นทุกจะมีรูปแบบคือ funtion={........} ทุกอย่างที่อยู๋ใน {.....} 
+                        <p>ในการเขียนฟังก์ชั่นทุกจะมีรูปแบบคือ funtion {........} ทุกอย่างที่อยู่ใน {.....} 
                             จะอยู่ในการทำงานของ function นี้ เช่น
                         </p>
                         <pre>
@@ -285,8 +294,8 @@
                             z = x + y;         // Compute Values
                         </pre>
                         <p>โดยประเภทของ Value จะแบ่งออกเป็น 2 ชนิดคือ<br>
-                            1.ตัวแปรกำหนดค่าแล้ว (Fixed values) เราเรียกตัวแปรเหล่านี้ว่า Literals <br>
-                            2.ตัวแปรยังไม่กำหนดค่า (Variable values) เราเรียกตัวแปรเหล่านี้ว่า Variables <br>
+                            1.ค่าตายตัว (Fixed values) คือเป็นค่าที่ไม่สามารถเปลี่ยนแปลงได้ เราเรียก Literals <br>
+                            2.ค่าที่ยังไม่ได้กำหนดค่า (Variable values) คือเป็นค่าที่สามารถเปลี่ยนแปลงค่าได้ภายหลัง เราเรียก Variables <br>
                         </p>
                     <h3>Literals ที่สามารถเห็นได้ชัดเจนคือ</h3>
                         <p>
@@ -301,7 +310,7 @@
                         </pre>
                     <h3>Variables</h3>
                         <p>ทางโปรแกรมมิ่งนั้น Variables มีไว้สำหรับในการเก็บค่าโดยจะต้องเกิดการประกาศชื่อVariablesก่อนแล้วเก็บ<br>
-                            โดยใน javascript นั้นจะใช้คำสั่ง "var ชื่อVariables" ในการประกาศตัวแปร <br>
+                            โดยใน javascript นั้นจะใช้คำสั่ง "var ชื่อ Variables" ในการประกาศตัวแปร <br>
                             และเครื่องหมาย "เท่ากับ"นั้นมีไว้สำหรับ เก็บข้อมูลเข้า Variables<br>
                             ดังตัวอย่าง
                         </p>
@@ -311,13 +320,13 @@
                         </pre>
                     <h3>Operators ตัวดำเนินการ</h3>
                         <p>
-                            จำพวกตัวดำเนินการคณิตศาสตร์(arithmetic operators ) เช่น + - * / และ ( )วงเล็บ สำหรับกำหนดความสำคัญ เช่น
+                            JavaScript ได้นำดำเนินการคณิตศาสตร์(arithmetic operators ) เช่น + - * / และ ( )วงเล็บ มาใช้ เช่น
                         </p>
                         <pre>
                             (5 + 6) * 10
                         </pre>
                         <p>
-                            และเครื่องหมาย "เท่ากับ" ก็เป็น operator เช่นกันแต่เป็นจำพวก (assignment operator) คือไว้สำหรับเก็บค่าข้อมูลเช่น
+                            และ JavaScript ได้นำเครื่องหมาย "เท่ากับ" ซึ่งเป็นตัวดำเนินการแบบ assignment operatorคือไว้สำหรับเก็บค่าข้อมูลเช่น
                         </p>
                         <pre>
                             var x, y;
@@ -331,25 +340,26 @@
                             x * 10 สามารถใช้ตัวแปรที่กำหนดมาแล้วมาใช้งานได้
                             "John" + " " + "Doe" หรือการนำตัวอักษรมาต่อกัน
                         </pre>
-                    <h3>keyword การตั้งสมการมากกว่า  2 ตัวแปร</h3>
-                        <p>เราสามารถประกาศตัวแปรได้มากกว่า 1 ตัว และใช้ในการคำนวณได้มากกว่า 1 ตัวเช่น</p>
+                    <h3>keyword ตัวแปร</h3>
+                        <p>keyword คือ ตัวที่ถูกตั้งขึ้นมาเป็นชื่อ เพื่อเก็บค่า โดยถูกตั้งขึ้นมาจากคำสั่ง var</p>
                         <pre>
                             var x, y;
                             x = 5 + 6;
-                            y = x * 10;
+                            y = x * 10;                            
                         </pre>
                     <h3>การ comment</h3>
                         <p>ใช้เพื่อให้ผู้เขียนคนต่อๆไปหรือตัวเองเมื่อกลับมาอ่านภายหลัง สามารถเข้าใจได้ <br>
                         โดย syntax เป็นดังนี้  
                         //...... <br>
                         /* ...... */ <br>
-                        โดยโค้ดหลังจาก comment เหล่านี้จนจบนั้นจะไม่เกิดการอ่านจาก computer  เช่น</p>
+                        โดยโค้ดหลังจาก comment เหล่านี้จนจบนั้นจะไม่เกิดการ execute เช่น</p>
                         <pre>
                             var x = 5;   // I will be executed
                             // var x = 6;   I will NOT be executed
                         </pre>
                     <h3>JavaScript is Case Sensitive</h3>
-                        <p>JavaScript การตั้งชื่อจะซ้ำแต่ถ้าหากเป็นตัวใหญ่ และตัวเล็ก ภาษาจะคิดว่าเป็นคนละ</p>
+                        <p>JavaScript การที่ตั้งชื่อตัวแปร แม้ว่าจะมีความหมายเหมือนกันแต่ถ้า เป็นตัวอักษรคนละตัวแบบ <br>
+                        ตัวอักษรภาษาอังกฤษ ตัวเล็ก และ ตัวใหญ่ JavaScriptจะเข้าใจว่า นี่เป็นตัวแปรคนละ</p>
                         <pre>
                             var lastname, lastName;
                             lastName = "Doe";
@@ -363,7 +373,7 @@
                 </div>
                 <div class="paragraph">
                     <p>การ comment อย่างที่กล่าวไว้ก่อนหน้านี้มีไว้สำหรับให้ผู้เขียนคนต่อๆไปหรือตัวเอง
-                        เมื่อกลับมาอ่านภายหลัง สามารถเข้าใจไดโดยการอธิบาย <br>
+                        เมื่อกลับมาอ่านภายหลัง สามารถเข้าใจได้โดยการอธิบาย <br>
                         และยังสามารถไว้ใช้สำหรับการทดสอบโค้ด 
                     </p>
                     <p>โดยการ comment นั้นมี 2 แบบ <br>
@@ -482,6 +492,16 @@
                         </pre>
                 </div>
             </div>
+            <div class="page">
+                <div class="head">
+                    <h2 id="js_oper">JavaScript Operators</h2>
+                </div>
+                <div class="paragraph">
+                    
+                </div>
+            </div>
+            
+
 
             
         </div>
