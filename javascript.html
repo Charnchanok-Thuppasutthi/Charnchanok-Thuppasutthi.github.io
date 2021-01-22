@@ -95,7 +95,7 @@
                     <h3>เราสามารถสร้างไฟล์ script ได้ทั้ง head และ  body</h3>
                     <p>โดยถ้าหากเราวาง script ไว้ส่วนล่างของ body หรือก็คือไว้ข้างล่าง<br>
                     จะช่วยเพิ่มความเร็วในการแสดงผลของ browserได้เพราะว่า script ใช้เวลาในการอ่านนาน</p>
-                    ตัวอย่างการกำหนดฟังก์ชั่น
+                    ตัวอย่างการกำหนดฟังก์ชั่นที่ head
                     <pre>
                     &lt;head&gt;<br>
                         &lt;script&gt;<br>
@@ -105,6 +105,7 @@
                         &lt;/script&gt;<br>
                     &lt;/head&gt;<br>
                     </pre>
+                    <p>ตัวอย่างการกำหนดฟังก์ชั่นที่ body</p>
                     <pre>
                         &lt;body&gt;<br>
                             &lt;script&gt;<br>
@@ -497,7 +498,137 @@
                     <h2 id="js_oper">JavaScript Operators</h2>
                 </div>
                 <div class="paragraph">
-                    
+                    <p>ตัวดำเนินการใส่ค่า (assignment)ใช้ตัว "เท่ากับ" (=) เช่น</p>
+                        <pre>
+                            var x = 10;
+                        </pre>
+                    <p>ตัวดำเนินการใส่ค่า (addition)ใช้ตัว "+" คือการบวกเลขเข้าด้วยกัน เช่น</p>
+                        <pre>
+                            var x = 5;
+                            var y = 2;
+                            var z = x + y;
+                        </pre>
+                     <p>ตัวดำเนินการใส่เพิ่มเท่าตัว (multiplication )ใช้ตัว "*" คือการคูณตัวเลขเข้าด้วยกัน เช่น</p>
+                        <pre>
+                            var x = 5;
+                            var y = 2;
+                            var z = x * y;
+                        </pre>
+                    <h3>Arithmetic Operators</h3>
+                        <p>ตัวดำเนินการทางคณิตศาสตร์ใน javascript มีดังนี้</p>
+                            <table style="width: 40%;">
+                                <tr>
+                                <th>Operator</th><th>คำบรยาย</th>
+                                </tr>
+                                <tr><td>+</td><td>บวก</td></tr>
+                                <tr><td>-</td><td>ลบ</td></tr>
+                                <tr><td>*</td><td>คูณ</td></tr>
+                                <tr><td>**</td><td>ยกกำลัง</td></tr>
+                                <tr><td>/</td><td>หาร</td></tr>
+                                <tr><td>%</td><td>หารเอาเศษ</td></tr>
+                                <tr><td>++</td><td>บวก1</td></tr>
+                                <tr><td>--</td><td>ลบ1</td></tr>
+                            </table>
+                    <h3>การย่อ operator</h3>
+                            <p>เราสามารถลดรูปตัวอักษรตอนตั้งสมการได้ ซึ่งจะได้ผลลัพธ์เท่ากับก่อนลดรูป</p>
+                        <table style="width: 40%;">
+                            <tr>
+                            <th>Operator</th><th>ตัวอย่าง</th><th>ค่าเท่ากับ</th>
+                            </tr>
+                            <tr><td>+</td><td>x = y</td><td>x = y</td></tr>
+                            <tr><td>+=</td><td>x += y</td><td>x = x + y</td></tr>
+                            <tr><td>-=</td><td>x -= y</td><td>x = x - y</td></tr>
+                            <tr><td>*=</td><td>x *= y</td><td>x = x * y</td></tr>
+                            <tr><td>/=</td><td>x /= y</td><td>x = x / y</td></tr>
+                            <tr><td>%=</td><td>x %= y</td><td>x = x % y</td></tr>
+                            <tr><td>**=</td><td>x **= y</td><td>x = x ** y</td></tr>                      
+                        </table>
+                        <p>ตัวอย่างเช่น</p>
+                            <pre>
+                                var x = 10;
+                                x += 5;
+                            </pre>
+                    <h3>การบวก String </h3>
+                        <p>เราจะใช้ "+" ในการเชื่อม string มากกว่า 1 ตัว เข้าด้วยกัน เช่น</p>
+                            <pre>
+                                var txt1 = "John";
+                                var txt2 = "Doe";
+                                var txt3 = txt1 + " " + txt2;
+                                <div clss="method_display">
+                                <p id="demo4"></p>
+                                    <script>
+                                        var txt1 = "John";
+                                        var txt2 = "Doe";
+                                        document.getElementById("demo4").innerHTML = txt1 + " " + txt2;
+                                    </script>
+                                </div>
+                            </pre>
+                        <p>เราสามารถใช้การย่อสมการ "+=" มาใช้กับสตริงได้</p>
+                            <pre>
+                                var txt1 = "What a very ";
+                                txt1 += "nice day";
+                            </pre>
+                            <div class="method_display">
+                            <p id="demo5"></p>
+                                <script>
+                                    txt1 = "What a very ";
+                                    txt1 += "nice day";
+                                    document.getElementById("demo5").innerHTML = txt1;
+                                </script>
+                            </div>
+                    <h3>การรวม string และ number</h3>
+                        <p>การรวม 2 number จะได้ผลรวม ถ้ารวม number กับ string จะได้ string</p>
+                            <pre>
+                                var x = 5 + 5;
+                                var y = "5" + 5;
+                                var z = "Hello" + 5;
+                            </pre>
+                            <div class="method_display">
+                                <pre>
+                                    <p id="demo6"></p>
+                                    <script>
+                                        var x = 5 + 5;
+                                        var y = "5" + 5;
+                                        var z = "Hello" + 5;
+                                        document.getElementById("demo6").innerHTML =
+                                        x + "<br>" + y + "<br>" + z;
+                                    </script>
+                                </pre>
+                            </div>
+                            
+                    <h3>Operator เปรียบเทียบ</h3>
+                        <p>ไว้ใช้เปรียบเทียบห</p>
+                        <table style="width: 40%;">
+                            <tr>
+                            <th>Operator</th><th>คือ</th>
+                            </tr>
+                            <tr><td>==</td><td>มีค่าเท่ากัน</td></tr>
+                            <tr><td>===</td><td>มีค่าเท่ากัน และประเภทเดียวกัน</td></tr>
+                            <tr><td>!=</td><td>ไม่เท่ากัน</td></tr>
+                            <tr><td>!==</td><td>ค่าไม่เท่า หรือ ประเภทไม่เหมือนกัน</td></tr>
+                            <tr><td> > </td><td>มากกว่า</td></tr>
+                            <tr><td> < </td><td>น้อยกว่า</td></tr>
+                            <tr><td>>=</td><td>มากกว่าเท่ากับ</td></tr> 
+                            <tr><td><=</td><td>น้อยกว่าเท่ากับ</td></tr>   
+                            <tr><td>?</td><td>conditional หรือ ตรรกะ ถ้า..แล้ว "->" ลูกศรทางคณิตศาสตร์ </td></tr>                      
+                        </table>
+                    <h3>operator ตรรกะ</h3>
+                        <table style="width: 40%;">
+                            <tr>
+                            <th>Operator</th><th>คือ</th>
+                            </tr>
+                            <tr><td>&&</td><td>and</td></tr>
+                            <tr><td>||</td><td>or</td></tr>
+                            <tr><td>!</td><td>not</td></tr>                    
+                        </table>
+                    <h3>operator ส่งคือประเภท</h3>
+                    <table style="width: 40%;">
+                        <tr>
+                        <th>Operator</th><th>คือ</th>
+                        </tr>
+                        <tr><td>typeof</td><td>return ประเภทของ Variable</td></tr>
+                        <tr><td>instanceof</td><td>return True ถ้า object เป็นค่าคงที่ไม่ใช่ตัวแปร</td></tr>
+                    </table>
                 </div>
             </div>
             

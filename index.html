@@ -44,26 +44,35 @@
             <p> คำว่า Elements จะนิยามถึงทุกอย่างที่เริ่มจาก tag เปิดจนถึงปิด โดย มี tag <br>
             <h3> Elements สามารถติดกันได้ คือสามารถเรียกใช้หลายๆ tag พร้อมกันได้  </h3>
               <p>ยกตัวอย่างCode</p>
-                <p> &lt;!DOCTYPE html&gt; <br>
+              <pre>
+                &lt;!DOCTYPE html&gt; <br>
                 &lt;html&gt; <br>
-                &lt;body&gt; <br><br>
-                &lt;h1&gt; My First Heading&lt;/h1&gt; <br>
-                &lt;p&gt; My first paragraph.&lt;/p&gt; <br><br>
-                &lt;/body&gt; <br>
+                  &lt;body&gt; <br><br>
+                    &lt;h1&gt; My First Heading&lt;/h1&gt; <br>
+                    &lt;p&gt; My first paragraph.&lt;/p&gt; <br><br>
+                  &lt;/body&gt; <br>
                 &lt;/html&gt;  <br> 
+              </pre>
+                
               <p>จะเห็นได้ว่า &lt;html&gt;&lt;body&gt;&lt;h1&gt; สามารถติดกันได้<br>
-                ส่วน code ที่อยู่ใน &lt;html&gt จนถึงฝั่งปิด(&lt;/html&gt) จะเป็นส่วนทั้งหมดของ file HTML นั้นๆ 
-                หรือก็คือส่วน <br><br>
+                ส่วน code ที่อยู่ใน &lt;html&gt จนถึงฝั่งปิด(&lt;/html&gt) จะเป็นส่วนทั้งหมดของ file HTML นั้นๆ </p>
+                หรือก็คือส่วน <br>
+                <pre>
                   &lt;body&gt; <br>
+                    &lt;h1&gt; My First Heading&lt;/h1&gt; <br>
+                    &lt;p&gt; My first paragraph.&lt;/p&gt; <br>
+                  &lt;/body&gt; <br>
+                </pre>
+                  
+              <p>ส่วนข้างในของตัว &lt;body&gt; นี้คือ code ที่อยู่ใน body <br>
+                <pre>
                   &lt;h1&gt; My First Heading&lt;/h1&gt; <br>
                   &lt;p&gt; My first paragraph.&lt;/p&gt; <br>
-                  &lt;/body&gt; <br></p>
-              <p>ส่วนข้างในของตัว &lt;body&gt; นี้คือ code ที่อยู่ใน body <br><br>
-                &lt;h1&gt; My First Heading&lt;/h1&gt; <br>
-                &lt;p&gt; My first paragraph.&lt;/p&gt; <br>
-              </p>
+                </pre>
+              
             <p> ซึ่ง &lt;h1&gt;....&lt;/h1&gt; ไว้สำหรับเขียน heading1 (หัวข้อที่1) <br>
-                การที่มี &lt;h1&gt;....&lt;/h1&gt; การมีเลข 1 เท่ากับว่าสามารถมี &lt;h2&gt;&lt;/h2&gt; , &lt;h3&gt;&lt;/h3&gt;...ถึง &lt;h6&gt;&lt;/h6&gt; <br>
+                การที่มี &lt;h1&gt;....&lt;/h1&gt; การมีเลข 1 เท่ากับว่าสามารถมี &lt;h2&gt;&lt;/h2&gt; ,
+                 &lt;h3&gt;&lt;/h3&gt;...ถึง &lt;h6&gt;&lt;/h6&gt; <br>
                 ซึ่ง  &lt;p&gt;....&lt;p&gt; ไว้สำหรับเขียน paragraph <br>
                 &lt;br&gt; ไว้สำหรับเริ่มไปบรรทัดใหม่
 

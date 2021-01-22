@@ -35,3 +35,9 @@ a{
 .head{
   background-color:gray;
 }
+.paragraph{
+  padding-left: 15px;
+}
+table, th, td {
+  border: 1px solid black;
+}
