@@ -26,6 +26,8 @@
                 <a href="#js_comment">JS Comment </a><br>
                 <a href="#js_var">JS Variables </a><br>
                 <a href="#js_oper">JS Operators </a><br>
+                <a href="#js_arith">JS Arithmetic</a><br>
+                <a href="#js_assignment">JS Assignment</a>
             </div>
         </div>
         
@@ -629,6 +631,131 @@
                         <tr><td>typeof</td><td>return ประเภทของ Variable</td></tr>
                         <tr><td>instanceof</td><td>return True ถ้า object เป็นค่าคงที่ไม่ใช่ตัวแปร</td></tr>
                     </table>
+                </div>
+            </div>
+            <div class="page">
+                <div class="head">
+                    <h2 id=js_arith>JavaScript Arithmetic</h2>
+                </div>
+                <div class="paragraph">
+                    <h3>JavaScript Arithmetic Operators</h3>
+                        <p>Arithmetic Operators ตัวดำเนินดชการทางคณิตศาสตร์ นั้นมีไว้ใช้เฉพาะตัวเลข</p>
+                        <table style="width: 40%;">
+                            <tr>
+                            <th>Operator</th><th>ตัวอย่าง</th><th>ค่าเท่ากับ</th>
+                            </tr>
+                            <tr><td>+</td><td>x = y</td><td>x = y</td></tr>
+                            <tr><td>+=</td><td>x += y</td><td>x = x + y</td></tr>
+                            <tr><td>-=</td><td>x -= y</td><td>x = x - y</td></tr>
+                            <tr><td>*=</td><td>x *= y</td><td>x = x * y</td></tr>
+                            <tr><td>/=</td><td>x /= y</td><td>x = x / y</td></tr>
+                            <tr><td>%=</td><td>x %= y</td><td>x = x % y</td></tr>
+                            <tr><td>**=</td><td>x **= y</td><td>x = x ** y</td></tr>                      
+                        </table>
+                        <p>ตัวอย่างการใช้</p>
+                            <p>เราสามารถใช้กับตัวเลข</p>
+                            <pre>
+                                var x = 100 + 50;
+                            </pre>
+                            <p>เราสามารถใช้กับตัวแปร</p>
+                            <pre>
+                                var x = a + b;
+                            </pre>
+                            <p>หรือใช้กับ expression</p>
+                            <pre>
+                                var x = (100 + 50) * a;
+                            </pre>
+                    <h3>องค์ประกอบของสมการ</h3>
+                            <p>โดยจะมี 2 ส่วนคือ <br>
+                                1.operands ใช้เรียกกับตัวเลข <br>
+                                2.operator ตัวดำเนินการกับตัวเลข
+                            </p>
+                            <table>
+                                <tr>
+                                    <td>Operand</td><td>Operator</td><td>Operand</td>
+                                </tr>
+                                <tr><td>100</td><td>+</td><td>50</td></tr>
+                            </table>
+                    <h3>การเพิ่ม</h3>  
+                        <p>เราใช้การบวก "+" ในการเพิ่มจำนวน</p>        
+                            <pre>
+                                var x = 5;
+                                var y = 2;
+                                var z = x + y;
+                            </pre>
+                    <h3>การลด</h3>  
+                        <p>เราใช้การลบ "-" ในการลดจำนวน</p>        
+                            <pre>
+                                var x = 5;
+                                var y = 2;
+                                var z = x - y; 
+                            </pre> 
+                    <h3>การคูณ</h3>  
+                        <p>เราใช้การคูณ "*" ในการเพิ่มค่าเป็นเท่าๆ</p>        
+                            <pre>
+                                var x = 5;
+                                var y = 2;
+                                var z = x * y;
+                            </pre> 
+                    <h3>การหาร</h3>  
+                        <p>เราใช้การหาร "/" ในการหาร</p>        
+                            <pre>
+                                var x = 5;
+                                var y = 2;
+                                var z = x / y;
+                            </pre> 
+                    <h3>การหาเศษ</h3>  
+                        <p>เราใช้การม้อด(modulus) "%" ในการหาเศษ</p>        
+                             <pre>
+                                var x = 5;
+                                var y = 2;
+                                var z = x % y;
+                            </pre> 
+                    <h3>การเพิ่ม(Incrementing)</h3>  
+                        <p>เราใช้เครื่องหมาย "++" ในการหาเพิ่มจำนวนไป 1 </p>        
+                             <pre>
+                                var x = 5;
+                                x++;
+                                var z = x;
+                            </pre> 
+                    <h3>การเพิ่ม(Decrementing)</h3>  
+                        <p>เราใช้เครื่องหมาย "--" ในการหาลดจำนวนไป 1 </p>        
+                            <pre>
+                                var x = 5;
+                                x--;
+                                var z = x;  
+                            </pre> 
+                    <h3>การยกกำลัง(Exponentiation)</h3>  
+                        <p>เราใช้เครื่องหมาย "**" ในการยกกำลัง </p>        
+                            <pre>
+                                var x = 5;
+                                var z = x ** 2;   
+                            </pre> 
+                        <p>เราสามารถใช้คำสั่ง "Math.pow(x,y):" หายกกำลังได้</p>
+                            <pre>
+                                var x = 5;
+                                var z = Math.pow(x,2);   // result is 25
+                            </pre>
+                    <h3>ลำดับความสำคัญ Precedence</h3>
+                        <p>ตัวอย่าง หากสมการมีการคำนวณมากกว่า 1 operator แต่ละ arithmetic operator  <br>
+                            จะมีลำดับความสำคัญในการดำเนินการอยู่คือจะมีลำดับตอนเริ่มคำนวณก่อน-หลัง <br>
+                        โดยจะเริ่มจาก การคูณ "*" การหาร "/" การบวก "+" การลบ "-"<br>
+                        โดยเราสามารถใช้ วงเล็บ () ในการกำหนด ลำดับความสำคัญในการดำเนินการได้ เช่น</p>
+                            <pre>
+                                var x = 100 + 50 * 3;   //250
+                                var x = (100 + 50) * 3; //450
+                            </pre>               
+                </div>
+            </div>
+            <div class="page">
+                <div class="head">
+                    <h2 id=js_assignment>JavaScript Assignment</h2>
+                </div>
+                <div class="paragraph">
+
+
+
+                    
                 </div>
             </div>
             
