@@ -791,7 +791,83 @@
                     <h2 id="js_datat">JavaScript Data Types</h2>
                 </div>
                 <div class="paragraph">
-                    
+                    <p>ใน JavaScript นั้น Variable สามารถเก็บข้อมูลได้หลายประเภท ทั้ว ตัวเลข ตัวอักษร </p>
+                        <pre>
+                            var length = 16;                               // Number
+                            var lastName = "Johnson";                      // String
+                            var x = {firstName:"John", lastName:"Doe"};    // Object
+                        </pre>
+                    <p> concept ของ Data types คือแต่ละประเภทนั้นจะ มีการทำงานที่ต่างกัน เช่ <br>
+                    ค่าที่ได้จากสมการข้างล้างหากไม่มี data type จะไม่สามารถทำงานได้</p>
+                        <pre>
+                            var x = 16 + "Volvo";
+                        </pre>
+                    <p>แต่เมื่อมี data type จะสามารถทำงานได้ซึ่งผลลัพธืจะขึ้นอยู่กับประเภท หากยกตัวอย่าง</p>
+                        <pre>
+                            var x = 16 + "Volvo"; //16Volvo
+                            var x = "Volvo" + 16; //Volvo16
+                        </pre>
+                            <p>ผลลัพธ์ที่ได้นั้นต่าง โดยเห็นได้ว่า JavaScript นั้นอ่านจากซ้ายไปขวา</p>
+                    <p>และถ้าหากเป็นแบบตัวอย่างข้างล่าง</p>
+                        <pre>
+                            var x = 16 + 4 + "Volvo"; //20Volvo
+                            var x = "Volvo" + 16 + 4; //Volvo164
+                        </pre>
+                            <p>ผลลัพธ์จะเห็นได้ว่า หากเป็น String ชึ้นก่อน และมีตัวเลขตาม JavaScript จะเข้าใจว่า0ตัวเลขนั้นคือString</p>
+                    <h3>JavaScript Types are Dynamic</h3>
+                        <p>Type นั้นจะมีมิติคือตัวแปรสามารถรับ ค่าแต่ละชนิดได้ขึ้นอยู่กับว่าจะให้รับค่าอะไรเช่น</p>
+                            <pre>
+                                var x;           // Now x is undefined  
+                                x = 5;           // Now x is a Number
+                                x = "John";      // Now x is a String
+                            </pre>
+                    <h3>String</h3>
+                        <p>คือ ตัวอักษรที่อยู่ในเครื่องหมาย single quote('...') และ double quote("...") เช่น</p>
+                            <pre>
+                                var carName1 = "Volvo XC60";   // Using double quotes
+                                var carName2 = 'Volvo XC60';   // Using single quotes
+                            </pre>
+                    <h3>Number</h3>
+                        <p>คือตัวเลขต่างๆที่ไม่ได้อยู่ในเครื่องหมาย single quote('...') และ double quote("...") เช่น</p>
+                            <pre>
+                                var x1 = 34.00;     // Written with decimals
+                                var x2 = 34;        // Written without decimals
+                            </pre>
+                        <p>หรืออาจจะเขียนทางวิทยาศาสตร์ได้</p>
+                            <pre>
+                                var y = 123e5;      // 12300000
+                                var z = 123e-5;     // 0.00123
+                            </pre>
+                    <h3>Boolean</h3>
+                        <p>คือค่า จริง(True) หรือเท็จ(False)ทางตรรกะศาสตร์ เช่น</p>
+                            <pre>
+                                var x = 5;
+                                var y = 5;
+                                var z = 6;
+                                (x == y)       // Returns true
+                                (x == z)       // Returns false
+                            </pre>
+                    <h3>Arrays</h3>
+                        <p>คือ ตัวแปรที่สามารถเก็บค่า ได้มากกว่า 1 ตัวโดยการสร้างจะประกาศในเครื่องหมาย [...] โดยมีเครื่องหมาน "," ในการคั้นแต่ละตัว</p>
+                            <pre>
+                                var cars = ["Saab", "Volvo", "BMW"];
+                            </pre>
+                    <h3>Objects</h3>
+                        <p>ตัวแปรที่จะเก็บค่าเป็น Name และในName จะมีค่าvalue โดยการสร้างจะประกาศในเครื่องหมาย {...} <br>
+                            โดยมีเครื่องหมาน "," ในการคั้นแต่ละName และ เครื่องหมาย : คั้น Name กับ Value </p>
+                            <pre>
+                                var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+                            </pre>
+
+
+
+
+
+
+
+
+
+
                 </div>
             </div>
 
