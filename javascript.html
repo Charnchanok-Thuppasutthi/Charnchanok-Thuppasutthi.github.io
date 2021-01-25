@@ -858,12 +858,52 @@
                             <pre>
                                 var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
                             </pre>
+                    <h3>typeof Operator</h3>
+                        <p>typeof คือคำสั่งที่ไว้ใช้สำหรับตรวจสอบ ประเภทของ operator นั้น โดยจะได้ค่ากลับมาจากการ Return เป็น type </p>
+                            <pre>
+                                typeof ""             // Returns "string"
+                                typeof "John"         // Returns "string"
+                                typeof "John Doe"     // Returns "string"
+                                typeof 0              // Returns "number"
+                                typeof 314            // Returns "number"
+                                typeof 3.14           // Returns "number"
+                                typeof (3)            // Returns "number"
+                                typeof (3 + 4)        // Returns "number"
+                            </pre>
+                    <h3>Undefined</h3>
+                        <p>เป็นตัวแปรประเภทที่ไม่มีค่า</p>
+                            <pre>
+                                var car;    // Value is undefined, type is undefined
+                            </pre>
+                        <p>เราสามารถตั้งค่าให้เป็น undefined ได้โดยการใส่ค่า undefined</p>
+                            <pre>
+                                car = undefined;    // Value is undefined, type is undefined
+                            </pre>
+                    <h3>Empty Values</h3>
+                        <p>คือตัวแปรที่มีค่า แต่ค่าที่มีเป็น ไม่มีค่า</p>
+                            <pre>
+                                var car = "";    // The value is "", the typeof is "string"
+                            </pre>
+                    <h3>Null</h3>
+                        <p>null คือไม่มีอะไรเลย ซึ่งจะใช้กับตัวแปร object</p>  
+                            <pre>
+                                var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+                                person = null;    // Now value is null, but type is still an object 
+                            </pre>        
+                        <p>เราสามารถประกาศ undefined ใส่ object นั้นเพื่อไม่ให้มีอะไรเลยก็ได้</p>
+                            <pre>
+                                var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+                                person = undefined;   // Now both value and type is undefined
+                            </pre>
+                    <h3>NUll and undefined</h3>
+                        <p>Null และ undefined นั้นจะมีความหมายเหมือนกัน แต่ต่างกันที่ Null ใช้กับ Object ส่วน undefined ใช้กับค่าอื่นๆ</p>
+                            <pre>
+                                typeof undefined           // undefined
+                                typeof null                // object
 
-
-
-
-
-
+                                null === undefined         // false
+                                null == undefined          // true
+                            </pre>
 
 
 
