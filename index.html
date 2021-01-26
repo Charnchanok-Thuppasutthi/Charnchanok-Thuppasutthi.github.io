@@ -14,7 +14,8 @@
   <body>
     <div class="language">
       <a href="index.html" target="_self">Html</a><br>
-      <a href="javascript.html" target="_self">Java Script</a>
+      <a href="javascript.html" target="_self">Java Script</a><br>
+      <a href="breakout.html" target="_blank">Breakout</a><br>
     </div>
     <div class="list_container">
       <p class="contents_title">เนื้อหา</p>
@@ -33,7 +34,6 @@
           <a href="#html_img">Html img</a><br>
       </div>
     </div>
-
       <!--Section1-->
     <div class ="content">
       <div class = "page">
@@ -82,7 +82,6 @@
             <hr>  
           </div>  
       </div>
-
       <!--Section2-->
       <div class="page">
         <div class ="head">
@@ -106,7 +105,6 @@
           <hr>
         </div>
       </div>
-
       <!--Section3-->
       <div class="page">
         <div class="head">
@@ -131,7 +129,6 @@
           <hr>
         </div>
       </div>
-
       <!--section4-->
       <div class="page">
         <div class="head">
@@ -197,7 +194,6 @@
             <hr>
           </div>
         </div>
-
       <!--section5-->
       <div class="page">
         <div class="head">
@@ -258,7 +254,6 @@
             <hr>
         </div>
       </div>
-
       <div class="page">
         <div class="head">
           <h2 id=html_formatting>ในหัวข้อ &lt; HTML Formatting &gt; </h2>
@@ -294,7 +289,6 @@
           <hr>
         </div>
       </div>
-
       <div class="page">
         <div class="head">
           <h2 id=html_quotation>ในหัวข้อ HMTL Quotation and Citation Elements</h2>
@@ -340,7 +334,6 @@
           <hr>
         </div>
       </div>
-
       <div class="page">
         <div class="head">
           <h2 id=html_comment>ในหัวข้อHTML Comments </h2>
@@ -351,60 +344,58 @@
           <h3>ไวยากรณ์คือ &lt;!-- ............... --!&gt;</h3>
           <hr>
         </div>
+      </div>    
+      <div class="page">
+        <div class="head">
+          <h2 id=html_color>ในหัวข้อ HTML Color สีใน Html </h2>
+        </div>  
+        <div class="paragraph">
+          <p>สีที่แสดงผลบนจอนั้นมีหลายโหมดด้วยกัน เช่น RGB , HEX, HSL, RGBA, และ HSLA</p>
+          <h3>ใน Html เราสามารถเรียกสีได้โดยใช้ชื่อ ละมีมากถึง140สี</h3>
+              &lt;h1 style="background-color:Tomato;"&gt;Tomato&lt;/h1&gt;<br>
+              <h1 style="background-color:Tomato;">Tomato</h1>
+
+              &lt;h1 style="background-color:Orange;"&gt;Orange&lt;/h1&gt; <br>
+              <h1 style="background-color:Orange;">Orange</h1>
+
+              &lt;h1 style="background-color:DodgerBlue;"&gt;DodgerBlue&lt;/h1&gt;<br>
+              <h1 style="background-color:DodgerBlue;">DodgerBlue</h1>
+
+              &lt;h1 style="background-color:MediumSeaGreen;"&gt;MediumSeaGreen&lt;/h1&gt;<br>
+              <h1 style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
+
+          <h3>การใส่ Background Color</h3>
+              &lt;h1 style="background-color:DodgerBlue;"&gt;Hello World&lt;/h1&gt;
+              <h1 style="background-color:DodgerBlue;">Hello World</h1>
+              &lt;p style="background-color:Tomato;"&gt;Lorem ipsum...&lt;/p&gt;
+              <p style="background-color:Tomato;">Lorem ipsum...</p>
+
+          <h3>การใส่สีตัวอักษร Text Color</h3>
+            <h1 style="color:Tomato;">Hello World</h1>
+            <p style="color:DodgerBlue;">Lorem ipsum...</p>
+            <p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+
+            &lt;h1 style="color:Tomato;"&gt;Hello World&lt;/h1&gt; <br>
+            &lt;p style="color:DodgerBlue;"&gt;Lorem ipsum...&lt;/p&gt; <br>
+            &lt;p style="color:MediumSeaGreen;"&gt;Ut wisi enim...&lt;/p&gt; <br>
+
+          <h3>การใส่ขอบสีรอบตัวอักษร Border Color</h3>
+            <h1 style="border:2px solid Tomato;">Hello World</h1>
+            <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+
+            &lt;h1 style="border:2px solid Tomato;"&gt;Hello World&lt;/h1&gt; <br>
+            &lt;p style="border:2px solid DodgerBlue;"&gt;Hello World&lt;/p&gt; <br>
+          <h3> Color Value ในสีแต่ละโหมดนั้นจะมีเลขกำกับอยู่ซึ่งเราสามารถเรียกใช้ผ่านเลขได้เลย</h3>
+            <p>โดย syntax ของตรงนี้คือ &lt;h1 style="background-color:โหมดสี(เลขสี,เลขสี,เลขสี);"&gt;......&lt;/h&gt;</p>
+            <h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+            <p>โดย syntax ของตรงนี้คือ &lt;h1 style="background-color:รหัสสี;"&gt; .....&lt;/h&gt;</p>
+            <h1 style="background-color:#ff6347;">#ff6347</h1>
+            <p>เราสามารถเพิ่มความสว่างของสี</p>
+            <p>&lt;h1 style="background-color:rgba(255, 99, 71, 0.5);"&gt;rgba(255, 99, 71, <p style="color:red;">0.5</p>  &lt;/h1&gt;</p>
+            <h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+          <hr>
+        </div>
       </div>
-      
-    <div class="page">
-      <div class="head">
-        <h2 id=html_color>ในหัวข้อ HTML Color สีใน Html </h2>
-      </div>  
-      <div class="paragraph">
-        <p>สีที่แสดงผลบนจอนั้นมีหลายโหมดด้วยกัน เช่น RGB , HEX, HSL, RGBA, และ HSLA</p>
-        <h3>ใน Html เราสามารถเรียกสีได้โดยใช้ชื่อ ละมีมากถึง140สี</h3>
-            &lt;h1 style="background-color:Tomato;"&gt;Tomato&lt;/h1&gt;<br>
-            <h1 style="background-color:Tomato;">Tomato</h1>
-
-            &lt;h1 style="background-color:Orange;"&gt;Orange&lt;/h1&gt; <br>
-            <h1 style="background-color:Orange;">Orange</h1>
-
-            &lt;h1 style="background-color:DodgerBlue;"&gt;DodgerBlue&lt;/h1&gt;<br>
-            <h1 style="background-color:DodgerBlue;">DodgerBlue</h1>
-
-            &lt;h1 style="background-color:MediumSeaGreen;"&gt;MediumSeaGreen&lt;/h1&gt;<br>
-            <h1 style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
-
-        <h3>การใส่ Background Color</h3>
-            &lt;h1 style="background-color:DodgerBlue;"&gt;Hello World&lt;/h1&gt;
-            <h1 style="background-color:DodgerBlue;">Hello World</h1>
-            &lt;p style="background-color:Tomato;"&gt;Lorem ipsum...&lt;/p&gt;
-            <p style="background-color:Tomato;">Lorem ipsum...</p>
-
-        <h3>การใส่สีตัวอักษร Text Color</h3>
-          <h1 style="color:Tomato;">Hello World</h1>
-          <p style="color:DodgerBlue;">Lorem ipsum...</p>
-          <p style="color:MediumSeaGreen;">Ut wisi enim...</p>
-
-          &lt;h1 style="color:Tomato;"&gt;Hello World&lt;/h1&gt; <br>
-          &lt;p style="color:DodgerBlue;"&gt;Lorem ipsum...&lt;/p&gt; <br>
-          &lt;p style="color:MediumSeaGreen;"&gt;Ut wisi enim...&lt;/p&gt; <br>
-
-        <h3>การใส่ขอบสีรอบตัวอักษร Border Color</h3>
-          <h1 style="border:2px solid Tomato;">Hello World</h1>
-          <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
-
-          &lt;h1 style="border:2px solid Tomato;"&gt;Hello World&lt;/h1&gt; <br>
-          &lt;p style="border:2px solid DodgerBlue;"&gt;Hello World&lt;/p&gt; <br>
-        <h3> Color Value ในสีแต่ละโหมดนั้นจะมีเลขกำกับอยู่ซึ่งเราสามารถเรียกใช้ผ่านเลขได้เลย</h3>
-          <p>โดย syntax ของตรงนี้คือ &lt;h1 style="background-color:โหมดสี(เลขสี,เลขสี,เลขสี);"&gt;......&lt;/h&gt;</p>
-          <h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
-          <p>โดย syntax ของตรงนี้คือ &lt;h1 style="background-color:รหัสสี;"&gt; .....&lt;/h&gt;</p>
-          <h1 style="background-color:#ff6347;">#ff6347</h1>
-          <p>เราสามารถเพิ่มความสว่างของสี</p>
-          <p>&lt;h1 style="background-color:rgba(255, 99, 71, 0.5);"&gt;rgba(255, 99, 71, <p style="color:red;">0.5</p>  &lt;/h1&gt;</p>
-          <h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
-        <hr>
-      </div>
-    </div>
-
       <div class="page">
         <div class="head">
           <h2 id=html_css>Html Css  </h2>
@@ -465,7 +456,6 @@
           <hr>
         </div>
       </div>
-
       <div class="page">
         <div class="head">
           <h2 id=html_link>HTML Links</h2>
@@ -499,8 +489,7 @@
             <hr>
         </div>
       </div>
-
-        <div class="page">
+      <div class="page">
           <div class="head">
           <h2 id=html_img>HTML Images</h2>
         </div>
