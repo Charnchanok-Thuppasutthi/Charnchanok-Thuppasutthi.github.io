@@ -11,30 +11,33 @@
         </div>
     </head>
     <body>
-        <div class="language">
-            <a href="index.html" target="_self">Html</a><br>
-            <a href="javascript.html" target="_self">Java Script</a><br>
-            <a href="breakout.html" target="_blank">Breakout</a><br>
-        </div>
-        <div class="list_container">
-            <p class="contents_title">เนื้อหา</p>
-            <div class="list">
-                <a href="#js_Intro">JS Introduction</a><br>
-                <a href="#js_Where2">JS Where To</a><br>
-                <a href="#js_output">JS Output</a><br>
-                <a href="#js_statement">JS Statment</a><br>
-                <a href="#js_syntax">JS Sytnax</a><br>
-                <a href="#js_comment">JS Comment </a><br>
-                <a href="#js_var">JS Variables </a><br>
-                <a href="#js_oper">JS Operators </a><br>
-                <a href="#js_arith">JS Arithmetic</a><br>
-                <a href="#js_assignment">JS Assignment</a><br>
-                <a href="#js_datat">JS Data types</a><br>
-                <a href="#js_function">JS Function</a><br>
-                <a href="#js_obj">JS Object</a><br>
+        <div class="leftSide">
+            <div class="language">
+                <a href="index.html" target="_self">Html</a><br>
+                <a href="javascript.html" target="_self">Java Script</a><br>
+                <a href="breakout.html" target="_blank">Breakout</a><br>
+            </div>
+            <div class="list_container">
+                <div class="contents_title">
+                    <p>เนื้อหา</p>
+                </div>
+                <div class="list">
+                    <a href="#js_Intro">JS Introduction</a><br>
+                    <a href="#js_Where2">JS Where To</a><br>
+                    <a href="#js_output">JS Output</a><br>
+                    <a href="#js_statement">JS Statment</a><br>
+                    <a href="#js_syntax">JS Sytnax</a><br>
+                    <a href="#js_comment">JS Comment </a><br>
+                    <a href="#js_var">JS Variables </a><br>
+                    <a href="#js_oper">JS Operators </a><br>
+                    <a href="#js_arith">JS Arithmetic</a><br>
+                    <a href="#js_assignment">JS Assignment</a><br>
+                    <a href="#js_datat">JS Data types</a><br>
+                    <a href="#js_function">JS Function</a><br>
+                    <a href="#js_obj">JS Object</a><br>
+                </div>
             </div>
         </div>
-        
         <div class="content">
             <div class="page">
                 <div class="head">
@@ -301,8 +304,8 @@
                             z = x + y;         // Compute Values
                         </pre>
                         <p>โดยประเภทของ Value จะแบ่งออกเป็น 2 ชนิดคือ<br>
-                            1.ค่าตายตัว (Fixed values) คือเป็นค่าที่ไม่สามารถเปลี่ยนแปลงได้ เราเรียก Literals <br>
-                            2.ค่าที่ยังไม่ได้กำหนดค่า (Variable values) คือเป็นค่าที่สามารถเปลี่ยนแปลงค่าได้ภายหลัง เราเรียก Variables <br>
+                            1.Fixed values คือเป็นค่าที่ไม่สามารถเปลี่ยนแปลงได้ เราเรียก Literals <br>
+                            2.Variable values คือเป็นค่าที่สามารถเปลี่ยนแปลงค่าได้ภายหลัง เราเรียก Variables <br>
                         </p>
                     <h3>Literals ที่สามารถเห็นได้ชัดเจนคือ</h3>
                         <p>
@@ -357,8 +360,8 @@
                     <h3>การ comment</h3>
                         <p>ใช้เพื่อให้ผู้เขียนคนต่อๆไปหรือตัวเองเมื่อกลับมาอ่านภายหลัง สามารถเข้าใจได้ <br>
                         โดย syntax เป็นดังนี้  
-                        //...... <br>
-                        /* ...... */ <br>
+                        // โค้ดที่ต้องการทำการ comment ในบรรทัดเดียว <br>
+                        /* โค้ดที่ต้องการทำการ comment ในหลายบรรทัด*/ <br>
                         โดยโค้ดหลังจาก comment เหล่านี้จนจบนั้นจะไม่เกิดการ execute เช่น</p>
                         <pre>
                             var x = 5;   // I will be executed
@@ -462,7 +465,7 @@
                             <pre>
                                 var carName;
                             </pre>
-                        <p>เราสามารถทำให้ตัวแปรที่มีค่ากลายเป็นไม่มีค่า(undefined)ได้โดยการประกาศชื่อซ้ำ</p>
+                        <p>เราสามารถทำให้ตัวแปรที่มีค่ากลายเป็นไม่มีค่า (undefined) ได้โดยการประกาศชื่อซ้ำ</p>
                             <pre>
                                 var carName = "Volvo";
                                 var carName;
@@ -627,13 +630,13 @@
                             <tr><td>||</td><td>or</td></tr>
                             <tr><td>!</td><td>not</td></tr>                    
                         </table>
-                    <h3>operator ส่งคือประเภท</h3>
+                    <h3>operator ที่ไว้ใช้สำหรับตรวจสอบประเภท</h3>
                     <table style="width: 40%;">
                         <tr>
                         <th>Operator</th><th>คือ</th>
                         </tr>
                         <tr><td>typeof</td><td>return ประเภทของ Variable</td></tr>
-                        <tr><td>instanceof</td><td>return True ถ้า object เป็นค่าคงที่ไม่ใช่ตัวแปร</td></tr>
+                        <tr><td>instanceof</td><td>return ค่าตรรกะเป็น True ถ้า object นั้นเป็นค่าคงที่ ที่ไม่ใช่ตัวแปร</td></tr>
                     </table>
                 </div>
             </div>
@@ -643,7 +646,7 @@
                 </div>
                 <div class="paragraph">
                     <h3>JavaScript Arithmetic Operators</h3>
-                        <p>Arithmetic Operators ตัวดำเนินดชการทางคณิตศาสตร์ นั้นมีไว้ใช้เฉพาะตัวเลข</p>
+                        <p>Arithmetic Operators ตัวดำเนินดำการทางคณิตศาสตร์ นั้นมีไว้ใช้เฉพาะตัวเลข</p>
                         <table style="width: 40%;">
                             <tr>
                             <th>Operator</th><th>ตัวอย่าง</th><th>ค่าเท่ากับ</th>
@@ -800,12 +803,12 @@
                             var lastName = "Johnson";                      // String
                             var x = {firstName:"John", lastName:"Doe"};    // Object
                         </pre>
-                    <p> concept ของ Data types คือแต่ละประเภทนั้นจะ มีการทำงานที่ต่างกัน เช่ <br>
+                    <p> concept ของ Data types คือแต่ละประเภทนั้นจะ มีการทำงานที่ต่างกัน เช่น <br>
                     ค่าที่ได้จากสมการข้างล้างหากไม่มี data type จะไม่สามารถทำงานได้</p>
                         <pre>
                             var x = 16 + "Volvo";
                         </pre>
-                    <p>แต่เมื่อมี data type จะสามารถทำงานได้ซึ่งผลลัพธืจะขึ้นอยู่กับประเภท หากยกตัวอย่าง</p>
+                    <p>แต่เมื่อมี data type จะสามารถทำงานได้ซึ่งผลลัพธ์จะขึ้นอยู่กับประเภท หากยกตัวอย่าง</p>
                         <pre>
                             var x = 16 + "Volvo"; //16Volvo
                             var x = "Volvo" + 16; //Volvo16
@@ -816,7 +819,7 @@
                             var x = 16 + 4 + "Volvo"; //20Volvo
                             var x = "Volvo" + 16 + 4; //Volvo164
                         </pre>
-                            <p>ผลลัพธ์จะเห็นได้ว่า หากเป็น String ชึ้นก่อน และมีตัวเลขตาม JavaScript จะเข้าใจว่า0ตัวเลขนั้นคือString</p>
+                            <p>ผลลัพธ์จะเห็นได้ว่า หากเป็น String ชึ้นก่อน และมีตัวเลขตาม JavaScript จะเข้าใจว่า 0 ตัวเลขนั้นคือString</p>
                     <h3>JavaScript Types are Dynamic</h3>
                         <p>Type นั้นจะมีมิติคือตัวแปรสามารถรับ ค่าแต่ละชนิดได้ขึ้นอยู่กับว่าจะให้รับค่าอะไรเช่น</p>
                             <pre>
@@ -883,7 +886,7 @@
                                 car = undefined;    // Value is undefined, type is undefined
                             </pre>
                     <h3>Empty Values</h3>
-                        <p>คือตัวแปรที่มีค่า แต่ค่าที่มีเป็น ไม่มีค่า</p>
+                        <p>คือตัวแปรที่มีค่าเป็น ว่าง โดยตัวอย่างข้างล่างจะเป็น String ที่มีค่าคือ ว่าง</p>
                             <pre>
                                 var car = "";    // The value is "", the typeof is "string"
                             </pre>

@@ -18,9 +18,25 @@ p {
   left: 10px;
   position:fixed;
   top: 10px;
+  background-color:#E0E0E0;
+  
+  padding: 10px;
 } 
+.leftSide{
+
+}
+.contents_title{
+
+}
 .list_container{
   position:fixed;
+  padding: 10px;
+  background-color:#E0E0E0;
+  border-radius: 10px 0px 0px 10px;
+  -webkit-box-shadow: 0 10px 6px -6px #D0D0D0;
+  -moz-box-shadow: 0 10px 6px -6px #D0D0D0;
+  box-shadow: 0 10px 6px -6px #D0D0D0;
+  padding: 10px;
 }
 .content{
   padding-left: 10%;
