@@ -35,6 +35,7 @@
                     <a href="#js_datat">JS Data types</a><br>
                     <a href="#js_function">JS Function</a><br>
                     <a href="#js_obj">JS Object</a><br>
+                    <a href="#js_event">JS Events</a><br>
                 </div>
             </div>
         </div>
@@ -960,8 +961,115 @@
                 <div class="head">
                     <h2 id="js_obj">JavaScript Object</h2>
                 </div>
+                <div class="paragraph">
+                    <p>object คือ วัตถุๆหนึ่งเช่น คน คน มีลักษณะ (Propoties) เช่น สีผม เพศ ส่วนสูง และก็ พฤติกรรม (Method) เช่น พูด เดิน </p>
+                    <p>สรุปคือ object จะมีส่วนประกอบ 2 ส่วนคือ Propoties และ Method</p>
+                    <table style="width:50%">
+                        <tr>
+                            <th>Object</th>
+                            <th>Propoties</th>
+                            <th>Method</th>
+                        </tr>
+                        <tr>
+                            <td><img id="myImage" src="img/left.jpg" style="width:100px"></td>
+                            <td>คน.เพศ = ชาย</td>
+                            <td>คน.เดิน()</td>
+                        </tr>
+                    </table>
+                    <h3>การประกาศ Propoties</h3>
+                        <p>นี่คือการประกาศ ตัวแปรปกติ</p>
+                            <pre>
+                                var car = "Fiat";
+                            </pre>
+                        <p>นี่คือการประกาศ object </p>
+                            <pre>
+                                var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+                            </pre>
+                        <p>สามารถประกาศโดยการ เขียนในบรรทัดใหม่ได้</p>
+                            <pre>
+                                var person = {firstName:"John", 
+                                                lastName:"Doe", 
+                                                age:50, 
+                                                eyeColor:"blue"
+                                            };
+                            </pre>
+                        <p>การเรียกใช้ค่า object การเขียนจะมี syntax อยู่ 2 แบบดังนี้</p>
+                            <pre>
+                                objectName.propertyName
+                                หรือ
+                                objectName["propertyName"]
+                            </pre>
+                        <p>ตัวอย่างเช่น</p>
+                            <pre>
+                                &lt;p id="demo"&gt;&lt;/p&gt;
+                                &lt;script>
+                                // Create an object:
+                                    var person = {
+                                    firstName: "John",
+                                    lastName : "Doe",
+                                    id     :  5566
+                                    };
+                                // Display some data from the object:
+                                    document.getElementById("demo").innerHTML = person.firstName + " " + person.lastName;
+                                &lt;/script&gt;
+                            </pre>
+                        <p> Output ที่ได้จะเป็น</p>
+                            <pre>
+                                John Doe
+                            </pre>
+                    <h3>การประกาศ Method</h3>
+                            <pre>
+                                var person = {
+                                    firstName: "John",
+                                    lastName : "Doe",
+                                    id       : 5566,
+                                    fullName : function() {
+                                      return this.firstName + " " + this.lastName;
+                                    }
+                                  };
+                            </pre>
+                        <p>จะเห็นได้ว่า fullname นั้นมีการประกาศเป็น function หรือ ที่เราเรียกใน object ว่า method นั่นเอง</p>
+                            <pre>
+                                fullName : function() {
+                                    return this.firstName + " " + this.lastName;
+                                  }
+                            </pre>
+                            <p>โดยจะเห็น this ซึ่ง this นี้เป็นการบอกว่า ตัวแปรที่ตามหลังนี้ เป็น properties ในตัว object นั้นๆ</p>
+                        <p>การเรียกใช่ method จะเขียนดังนี้</p>
+                            <pre>
+                                objectName.methodName()
+                            </pre>
+                        <p>เช่น</p>
+                            <pre>
+                                &lt;p id="demo"&gt;&lt;/p&gt;
+                                &lt;script>
+                                // Create an object:
+                                    var person = {
+                                    firstName: "John",
+                                    lastName : "Doe",
+                                    id     :  5566
+                                    fullName : function() {
+                                        return this.firstName + " " + this.lastName;
+                                      }
+                                    };
+                                // Display some data from the object:
+                                    document.getElementById("demo").innerHTML = person.fullName();
+                                &lt;/script&gt;
+                            </pre>
+                        <p>Output คือ</p>
+                            <pre>
+                                John Doe
+                            </pre>
+                </div>
             </div>
-            
+            <div class="page">
+                <div class="head">
+                    <h2 id="js_event">JavaScript Events</h2>
+                </div>
+                <div class="paragraph">
+                    
+                </div>
+            </div>
         </div>
     </body>
 </html>
